@@ -135,7 +135,8 @@ button {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  position: relative; }
+  position: relative;
+  background: #eee; }
 
 .text-decoration {
   text-decoration: underline; }
@@ -228,9 +229,6 @@ h2 {
 .bg-red {
   background: #dd2a1b; }
 
-.bg-color {
-  background: rgba(60, 42, 152, 0.3); }
-
 .row {
   margin: 0 -10px;
   display: -webkit-box;
@@ -245,6 +243,9 @@ h2 {
 .col-3 {
   width: 33.3%;
   padding: 0 10px; }
+
+footer .container, header .container, main .container {
+  background: transparent; }
 
 .logo {
   max-width: 240px; }
@@ -565,6 +566,9 @@ h2 {
 .slick-dotted.slick-slider {
   margin-bottom: 0; }
 
+.brands .container {
+  padding: 50px 15px; }
+
 .brands-item {
   width: 20%;
   padding: 0 20px;
@@ -751,10 +755,11 @@ footer {
     height: 16px;
     fill: rgba(255, 255, 255, 0.5); }
 
-.products-section {
-  margin: 30px 0 0; }
-  .products-section h2 {
-    margin: 0 auto; }
+.products-section h2 {
+  margin: 0 auto; }
+
+.products-section .container {
+  padding: 0 15px 30px; }
 
 .product-cart {
   padding: 15px 15px 20px;
@@ -826,6 +831,9 @@ footer {
 
 .img-responsive {
   margin: 0 auto 30px; }
+
+.category-section .container {
+  padding: 30px 15px; }
 
 .category-section h3 {
   padding: 0 0 10px;
@@ -932,7 +940,8 @@ footer {
   color: #000;
   font-weight: bold;
   padding: 15px;
-  height: 130px; }
+  height: 130px;
+  background: #fff; }
   .category-item img {
     max-width: 75px;
     margin: 0 auto 10px; }

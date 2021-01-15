@@ -129,6 +129,7 @@ button
   display: flex
   flex-wrap: wrap
   position: relative
+  background: #eee
 
 .text-decoration
   text-decoration: underline
@@ -199,9 +200,6 @@ h2
 .bg-red
   background: $accent
   
-.bg-color
-  background: rgba(60, 42, 152, 0.3)
-
 .row
   margin: 0 -10px
   display: flex
@@ -211,6 +209,10 @@ h2
 .col-3
   width: 33.3%
   padding: 0 10px
+
+footer, header, main
+  .container
+    background: transparent
 
 //header
 .logo
@@ -486,6 +488,10 @@ h2
   margin-bottom: 0
 
 //brands
+.brands
+  .container
+    padding: 50px 15px
+
 .brands-item
   width: 20%
   padding: 0 20px
@@ -614,9 +620,10 @@ footer
 
 //products-section
 .products-section
-  margin: 30px 0 0
   h2
     margin: 0 auto
+  .container
+    padding: 0 15px 30px
 
 
 //product-cart
@@ -672,6 +679,8 @@ footer
 
 //category-section
 .category-section
+  .container
+    padding: 30px 15px
   h3
     padding: 0 0 10px
     border-bottom: 1px solid $blue
@@ -760,6 +769,7 @@ footer
   font-weight: bold
   padding: 15px
   height: 130px
+  background: #fff
   img
     max-width: 75px
     margin: 0 auto 10px
