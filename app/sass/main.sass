@@ -164,6 +164,12 @@ button
 
 .p-50
   padding: 50px 0
+  
+.p-30
+  padding: 30px 0
+
+.m-30
+  margin: 30px 0
 
 h2
   width: 100%
@@ -192,6 +198,9 @@ h2
 
 .bg-red
   background: $accent
+  
+.bg-color
+  background: rgba(60, 42, 152, 0.3)
 
 //header
 .logo
@@ -451,16 +460,14 @@ h2
   cursor: pointer
   @include display-center
   img
-    filter: grayscale(1)
     transition: .25s cubic-bezier(.25,.1,.25,1)
   &:hover
     img
-      filter: grayscale(0)
       transform: translateX(15px) rotateY(-45deg) scale3d(1.4,1.2,1)
 
 //footer
 footer
-  background: #353535
+  background: #5643c3
   padding: 20px 0
   color: #fff
   font-size: 14px
@@ -626,6 +633,11 @@ footer
   .product-cart
     max-width: 98%
     margin: 20px auto
+
+    
+.img-responsive
+  margin: 0 auto 30px
+
 
 
 @import "media"
