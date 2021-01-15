@@ -231,6 +231,21 @@ h2 {
 .bg-color {
   background: rgba(60, 42, 152, 0.3); }
 
+.row {
+  margin: 0 -10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch; }
+
+.col-3 {
+  width: 33.3%;
+  padding: 0 10px; }
+
 .logo {
   max-width: 240px; }
 
@@ -437,6 +452,24 @@ h2 {
     color: #fff; }
     .dropdown-menu li a:hover {
       background: #5038ca; }
+  .dropdown-menu li:hover .dropdown-menu__level {
+    display: block; }
+
+.dropdown-menu__level {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  -webkit-box-shadow: 0 5px 25px rgba(60, 42, 152, 0.5);
+          box-shadow: 0 5px 25px rgba(60, 42, 152, 0.5);
+  background: #5038ca;
+  min-width: 200px;
+  height: 100%;
+  display: none; }
+  .dropdown-menu__level li:last-child a {
+    border: none; }
+  .dropdown-menu__level li a {
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
 
 .slick-slide {
   outline: none; }
@@ -793,6 +826,122 @@ footer {
 
 .img-responsive {
   margin: 0 auto 30px; }
+
+.category-section h3 {
+  padding: 0 0 10px;
+  border-bottom: 1px solid #3c2a98;
+  margin: 0 0 20px;
+  font-weight: 500; }
+
+.category-section__sidebar {
+  max-width: 300px;
+  width: 100%;
+  position: relative; }
+
+.menu-category {
+  position: relative;
+  width: 100%;
+  background: #3c2a98;
+  color: #fff; }
+  .menu-category li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
+    .menu-category li:last-child {
+      border: none; }
+    .menu-category li:hover .menu-category__dropdown {
+      display: block; }
+    .menu-category li a {
+      color: #fff;
+      padding: 15px; }
+      > .menu-category li a:hover {
+        background: #FFCD00; }
+
+.menu-category__dropdown {
+  position: absolute;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  left: 100%;
+  top: 0;
+  min-width: 280px;
+  background: rgba(60, 42, 152, 0.7);
+  padding: 20px;
+  height: 100%;
+  background: #5038ca;
+  -webkit-box-shadow: 0 0 5px rgba(60, 42, 152, 0.3);
+          box-shadow: 0 0 5px rgba(60, 42, 152, 0.3);
+  display: none; }
+  .menu-category__dropdown li a {
+    color: #fff;
+    font-size: 14px;
+    padding: 10px; }
+    .menu-category__dropdown li a:hover {
+      background: #3c2a98;
+      text-indent: 5px; }
+  .menu-category__dropdown h4 {
+    font-weight: 500;
+    margin: 0 0 10px; }
+
+.menu-category__dropdown-img {
+  margin: 0 auto 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 150px; }
+
+.menu-category__links {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .menu-category__links:after {
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url("../img/next.svg") no-repeat center;
+      background-size: contain; }
+
+.category-wrapper {
+  width: calc(100% - 300px);
+  padding: 0 0 0 30px; }
+
+.category-item {
+  border: 2px solid #3c2a98;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+  padding: 15px;
+  height: 130px; }
+  .category-item img {
+    max-width: 75px;
+    margin: 0 auto 10px; }
+  .category-item:hover {
+    -webkit-box-shadow: 0 0 15px rgba(60, 42, 152, 0.3);
+            box-shadow: 0 0 15px rgba(60, 42, 152, 0.3); }
+
+.mb-20 {
+  margin-bottom: 20px; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
