@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Технолидер - магазин сельхоззапчастей</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<div class="mobile-menu">
+  <div class="btn-close"></div>
+  <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+
+  <ul class="main-menu">
+    <li class="main-menu__item">
+      <a href="index.html" class="main-menu__links">Главная</a>
+    </li>
+    <li class="main-menu__item">
+      <a href="catalog.html" class="main-menu__links links-drop">Каталог</a>
+    </li>
+    <li class="main-menu__item"><a href="delivery.html" class="main-menu__links">Доставка</a></li>
+    <li class="main-menu__item"><a href="about.html" class="main-menu__links">O компании</a></li>
+    <li class="main-menu__item"><a href="basket.html" class="main-menu__links">Отзывы</a></li>
+    <li class="main-menu__item"><a href="contacts.html" class="main-menu__links">Контакты</a></li>
+  </ul>
+
+  <div class="box-contacts">
+    <a href="tel:+79104430909" class="phone">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#icon-phone"></use>
+      </svg>
+      +7 (910) 443-09-09</a>
+    <a href="#callback__modal" class="open_modal color-grey text-decoration">Перезвонить вам?</a>
+  </div>
+
+  <div class="box-social">
+    <h3>Мы в соцсетях:</h3>
+
+    <ul class="list-social">
+      <li><a href="#">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#icon-vk"></use>
+        </svg>
+      </a></li>
+      <li><a href="#">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#icon-fb"></use>
+        </svg>
+      </a></li>
+      <li><a href="#">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#icon-tw"></use>
+        </svg>
+      </a></li>
+      <li><a href="#">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#icon-ig"></use>
+        </svg>
+      </a></li>
+    </ul>
+  </div>
+
+  <ul class="list-message">
+    <li><a href="#">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#icon-whatsapp"></use>
+      </svg>
+      <span>whats-app</span>
+    </a></li>
+    <li><a href="#">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#icon-telegram"></use>
+      </svg>
+      <span>telegram</span>
+    </a></li>
+    <li><a href="#">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#icon-skype"></use>
+      </svg>
+      <span>skype</span>
+    </a></li>
+    <li><a href="mailto:mail@mail.com">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#icon-email"></use>
+      </svg>
+      <span>mail@mail.com</span>
+    </a></li>
+  </ul>
+</div>
+
+<header>
+  <div class="header-top">
+    <div class="container">
+      <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+
+      <form method="post" class="form-search">
+        <label><input type="text" placeholder="Найти" required></label>
+        <button type="submit">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#icon-search"></use>
+          </svg>
+        </button>
+      </form>
+
+      <div class="box-contacts">
+        <a href="tel:+79104430909" class="phone">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#icon-phone"></use>
+          </svg>
+          +7 (910) 443-09-09</a>
+        <a href="#callback__modal" class="open_modal color-grey text-decoration">Перезвонить вам?</a>
+      </div>
+
+      <div class="links-group">
+        <a href="registration.html" class="links-cabinet">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#user-icon"></use>
+          </svg>
+        </a>
+
+        <a href="#" class="box-basket">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#icon-basket"></use>
+          </svg>
+          <span class="total-orders-basket">1</span>
+        </a>
+
+        <div class="btn-burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-bottom">
+    <div class="container">
+      <nav class="navigation-main">
+        <ul class="main-menu">
+          <li class="main-menu__item">
+            <a href="index.html" class="main-menu__links">Главная</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="catalog.html" class="main-menu__links links-drop">Каталог</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Подкатегория 1</a>
+                <ul class="dropdown-menu__level">
+                  <li><a href="#">Подкатегория 1-1</a></li>
+                  <li><a href="#">Подкатегория 1-1</a></li>
+                  <li><a href="#">Подкатегория 1-1</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Подкатегория 2</a></li>
+              <li><a href="#">Подкатегория 3</a></li>
+              <li><a href="#">Подкатегория 4</a></li>
+              <li><a href="#">Подкатегория 5</a></li>
+            </ul>
+          </li>
+          <li class="main-menu__item"><a href="delivery.html" class="main-menu__links">Доставка</a></li>
+          <li class="main-menu__item"><a href="about.html" class="main-menu__links">O компании</a></li>
+          <li class="main-menu__item"><a href="basket.html" class="main-menu__links">Отзывы</a></li>
+          <li class="main-menu__item"><a href="contacts.html" class="main-menu__links">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<section class="content-page">
+  <div class="container">
+    <ul class="breadcrumb">
+      <li><a href="index.html">Главная</a></li>
+      <li><span>Регистрация</span></li>
+    </ul>
+
+    <h1>Регистрация</h1>
+
+    <form method="post" class="form">
+      <label>
+        <span class="input-title">Ваш логин</span>
+        <input type="text" placeholder="Иван" name="login" required>
+      </label>
+      <label>
+        <span class="input-title">Придумайте пароль</span>
+        <input type="text" placeholder="······" name="password" required>
+      </label>
+      <label>
+        <span class="input-title">Ваш email</span>
+        <input type="text" placeholder="test@gmail.com" name="mail" required>
+      </label>
+      <div class="wrapper">
+        <p>Вы уже зарегистрировались?</p>
+        <a href="authorization.html" class="links color-accent text-decoration">Тогда авторизируйтесь</a>
+      </div>
+      <div class="img-recaptcha"><img src="img/recaptcha.png" alt=""></div>
+      <button type="submit" class="btn btn-accent">Зарегистрироваться</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-box footer-box-first">
+      <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+
+      <div class="copyright">© 2021 Все права защищены</div>
+
+      <div class="box-payment">
+        <p>Принимаем к оплате</p>
+        <ul class="list-payment">
+          <li><a href="#"><img src="img/visa.svg" alt=""></a></li>
+          <li><a href="#"><img src="img/mastercard.svg" alt=""></a></li>
+          <li><a href="#"><img src="img/privat.png" alt=""></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-box">
+      <h3>Каталог</h3>
+      <ul class="footer-menu">
+        <li><a href="#">Подкатегория</a></li>
+        <li><a href="#">Подкатегория</a></li>
+        <li><a href="#">Подкатегория</a></li>
+        <li><a href="#">Подкатегория</a></li>
+        <li><a href="#">Подкатегория</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-box">
+      <h3>Клиентам</h3>
+      <ul class="footer-menu">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">О компании</a></li>
+        <li><a href="#">Отзывы</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-box footer-box-contacts">
+      <h3>Контактная информация</h3>
+
+      <div class="row-wrapper">
+        <div class="col-wrapper">
+          <div class="box-contacts">
+            <a href="tel:+79104430909" class="phone">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#icon-phone"></use>
+              </svg>
+              +7 (910) 443-09-09</a>
+
+            <a href="tel:+79104430909" class="phone">
+              +7 (910) 443-09-09</a>
+            <a href="#callback__modal" class="open_modal links-call color-white text-decoration">Перезвонить вам?</a>
+          </div>
+
+          <div class="box-social">
+            <h3>Мы в соцсетях:</h3>
+
+            <ul class="list-social">
+              <li><a href="#">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#icon-vk"></use>
+                </svg>
+              </a></li>
+              <li><a href="#">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#icon-fb"></use>
+                </svg>
+              </a></li>
+              <li><a href="#">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#icon-tw"></use>
+                </svg>
+              </a></li>
+              <li><a href="#">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#icon-ig"></use>
+                </svg>
+              </a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-wrapper">
+          <ul class="list-message">
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#icon-whatsapp"></use>
+              </svg>
+              <span>whats-app</span>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#icon-telegram"></use>
+              </svg>
+              <span>telegram</span>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#icon-skype"></use>
+              </svg>
+              <span>skype</span>
+            </a></li>
+            <li><a href="mailto:mail@mail.com">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#icon-email"></use>
+              </svg>
+              <span>mail@mail.com</span>
+            </a></li>
+          </ul>
+
+          <div class="address">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#icon-location"></use>
+            </svg>
+            <p>Киев, ул. Крещатик</p>
+
+            <a href="#" class="color-white links-call text-decoration">Карта проезда</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

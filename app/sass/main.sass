@@ -112,6 +112,10 @@ input
   &::placeholder
     color: #333
 
+label
+  display: block
+  margin: 0 0 15px
+
 button
   outline: none
   font-family: $default-font
@@ -172,12 +176,37 @@ button
 .m-30
   margin: 30px 0
 
+h1
+  width: 100%
+  text-align: center
+  margin: 0 auto 30px
+  font-weight: bold
+  font-size: 30px
+
 h2
   width: 100%
   text-align: center
   margin: 0 auto 30px
   font-size: 20px
   font-weight: 700
+
+.breadcrumb
+  margin: 0 auto 30px
+  width: 100%
+  font-size: 14px
+  @include display-start
+  li
+    a
+      color: $blue
+      text-decoration: underline
+      &:hover
+        color: #000
+      &:after
+        content: '/'
+        display: inline-block
+        margin: 0 5px
+    span
+      color: rgba(#000, .7)
 
 .box-text
   font-size: 14px
@@ -284,6 +313,8 @@ footer, header, main
   max-width: 300px
   width: 100%
   position: relative
+  label
+    margin: 0
   input
     padding: 0 30px 0 15px
   button
@@ -857,6 +888,80 @@ footer
     transform: rotate(45deg)
   &:after
     transform: rotate(135deg)
+
+//content-page
+.content-page
+  .container
+    padding: 20px 15px 40px
+
+.form
+  margin: 0 auto
+  max-width: 400px
+  width: 100%
+  button
+    height: 50px
+    margin: 20px auto 0
+  .wrapper
+    font-size: 14px
+
+
+
+.img-recaptcha
+  max-width: 250px
+  margin: 20px auto
+
+.input-title
+  display: block
+  margin: 0 0 5px
+  font-size: 14px
+
+//delivery
+.delivery-box
+  padding: 20px 20px
+  background: #fff
+  box-shadow: 0 4px 0 0 rgba($blue, .75)
+  margin: 0 0 30px
+  &:last-child
+    margin: 0
+  h3
+    text-align: center
+    width: 100%
+    font-weight: bold
+    font-size: 20px
+    margin: 0 auto 10px
+    position: relative
+    padding: 0 0 10px
+    &:before
+      content: ''
+      position: absolute
+      width: 70px
+      height: 3px
+      background: $blue
+      bottom: 0
+      left: 50%
+      transform: translate(-50%,0)
+
+
+.delivery-box__top
+  width: 100%
+  margin: 0 0 20px
+  @include display-start
+
+.delivery-box__img
+  width: 200px
+  height: 100px
+  @include display-center
+  padding: 10px
+
+.delivery-box__info
+  width: calc(100% - 200px)
+  padding: 0 0 0 20px
+
+.delivery-box__content
+  font-size: 14px
+  color: #444
+
+
 
 @import "media"
 // Всегда в конце

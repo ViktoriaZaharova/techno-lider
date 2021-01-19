@@ -1,3 +1,6 @@
+.color-accent {
+  color: #dd2a1b; }
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -116,6 +119,10 @@ input {
   input::placeholder {
     color: #333; }
 
+label {
+  display: block;
+  margin: 0 0 15px; }
+
 button {
   outline: none;
   font-family: "Montserrat", sans-serif;
@@ -191,12 +198,46 @@ button {
 .m-30 {
   margin: 30px 0; }
 
+h1 {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto 30px;
+  font-weight: bold;
+  font-size: 30px; }
+
 h2 {
   width: 100%;
   text-align: center;
   margin: 0 auto 30px;
   font-size: 20px;
   font-weight: 700; }
+
+.breadcrumb {
+  margin: 0 auto 30px;
+  width: 100%;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .breadcrumb li a {
+    color: #3c2a98;
+    text-decoration: underline; }
+    .breadcrumb li a:hover {
+      color: #000; }
+    .breadcrumb li a:after {
+      content: '/';
+      display: inline-block;
+      margin: 0 5px; }
+  .breadcrumb li span {
+    color: rgba(0, 0, 0, 0.7); }
 
 .box-text {
   font-size: 14px;
@@ -339,6 +380,8 @@ footer .container, header .container, main .container {
   max-width: 300px;
   width: 100%;
   position: relative; }
+  .form-search label {
+    margin: 0; }
   .form-search input {
     padding: 0 30px 0 15px; }
   .form-search button {
@@ -1036,6 +1079,97 @@ footer {
     -webkit-transform: rotate(135deg);
             transform: rotate(135deg); }
 
+.content-page .container {
+  padding: 20px 15px 40px; }
+
+.form {
+  margin: 0 auto;
+  max-width: 400px;
+  width: 100%; }
+  .form button {
+    height: 50px;
+    margin: 20px auto 0; }
+  .form .wrapper {
+    font-size: 14px; }
+
+.img-recaptcha {
+  max-width: 250px;
+  margin: 20px auto; }
+
+.input-title {
+  display: block;
+  margin: 0 0 5px;
+  font-size: 14px; }
+
+.delivery-box {
+  padding: 20px 20px;
+  background: #fff;
+  -webkit-box-shadow: 0 4px 0 0 rgba(60, 42, 152, 0.75);
+          box-shadow: 0 4px 0 0 rgba(60, 42, 152, 0.75);
+  margin: 0 0 30px; }
+  .delivery-box:last-child {
+    margin: 0; }
+  .delivery-box h3 {
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 auto 10px;
+    position: relative;
+    padding: 0 0 10px; }
+    .delivery-box h3:before {
+      content: '';
+      position: absolute;
+      width: 70px;
+      height: 3px;
+      background: #3c2a98;
+      bottom: 0;
+      left: 50%;
+      -webkit-transform: translate(-50%, 0);
+              transform: translate(-50%, 0); }
+
+.delivery-box__top {
+  width: 100%;
+  margin: 0 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.delivery-box__img {
+  width: 200px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 10px; }
+
+.delivery-box__info {
+  width: calc(100% - 200px);
+  padding: 0 0 0 20px; }
+
+.delivery-box__content {
+  font-size: 14px;
+  color: #444; }
+
+.color-accent {
+  color: #dd2a1b; }
+
 /*==========  Desktop First  ==========*/
 @media only screen and (max-width: 1200px) {
   /**/ }
@@ -1097,7 +1231,16 @@ footer {
   .main-slider-box p {
     margin: 0 0 40px; }
   .product-cart__image {
-    height: 200px; } }
+    height: 200px; }
+  header .navigation-main li a {
+    padding: 10px 7px;
+    font-size: 13px; }
+  .delivery-box__info {
+    width: 100%;
+    padding: 0; }
+  .delivery-box__img {
+    margin: 0 auto;
+    height: auto; } }
 
 @media only screen and (max-width: 480px) {
   header .box-contacts {
