@@ -1086,11 +1086,14 @@ footer {
   margin: 0 auto;
   max-width: 400px;
   width: 100%; }
+  .form .links {
+    font-size: 14px; }
   .form button {
     height: 50px;
     margin: 20px auto 0; }
   .form .wrapper {
-    font-size: 14px; }
+    font-size: 14px;
+    margin: 0 auto 20px; }
 
 .img-recaptcha {
   max-width: 250px;

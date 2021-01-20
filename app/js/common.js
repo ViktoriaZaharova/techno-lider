@@ -52,3 +52,5 @@ $('.btn-burger').on("click", function () {
 $('.btn-close').on("click", function () {
     $('.mobile-menu').fadeOut();
 });
+
+$('[name="phone"]').mask('+38(099) 999-99-99');
