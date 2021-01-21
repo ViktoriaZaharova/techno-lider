@@ -1139,5 +1139,148 @@ footer
       &:hover
         color: $blue
 
+.catalog-page
+  .wrapper
+    align-items: flex-start
+
+.catalog-content
+  width: calc(100% - 300px)
+  padding: 0 0 0 30px
+  .box-text
+    margin: 0 0 20px
+    ul
+      margin: 0 0 10px
+    &:last-child
+      margin: 0
+    h4
+      font-weight: 500
+      margin: 0 0 5px
+
+.box-text-wrapper
+  width: 100%
+  margin: 0 0 20px
+  @include display-start
+  .box-text
+    width: calc(100% - 150px)
+    padding: 0 0 0 20px
+  h3
+    font-weight: 600
+    margin: 0 0 10px
+    font-size: 16px
+
+.img-item
+  max-width: 150px
+  width: 100%
+  @include display-center
+
+.list-dots
+  list-style-type: disc
+  padding: 0 0 0 20px
+
+.js-tab-content
+  display: none
+
+.js-tab-content.active
+  display: block
+
+.sorting-box
+
+  @include display-start
+  p
+    font-size: 12px
+    margin: 0 10px 0 0
+
+select
+  font-family: $default-font
+  padding: 10px 30px 10px 20px
+  cursor: pointer
+
+.icon-select
+  position: absolute
+  right: 10px
+  top: 45%
+  transform: translate(0,-50%)
+  width: 12px
+  height: 12px
+  fill: $blue
+
+.label-select
+  margin: 0
+  position: relative
+
+.sorting-line
+  margin: 30px 0 20px
+  @include display-between
+
+.tab-header
+  @include display-start
+  li
+    width: 30px
+    height: 30px
+    cursor: pointer
+    margin: 0 10px 0 0
+    &:last-child
+      margin: 0
+    .svg-icon
+      fill: $blue
+
+.subcategory-wrapper
+  margin: 30px 0
+
+.subcategory-body
+  padding: 20px 0 0
+  display: none
+
+.subcategory-button
+  padding: 10px 20px
+  background: #fff
+  width: 100%
+  border: 1px solid #d4d4d4
+  cursor: pointer
+  font-size: 14px
+  font-weight: 600
+  @include display-between
+  &:after
+    content: '+'
+    display: inline-block
+    transition: .3s ease
+
+.subcategory-button.click
+  &:after
+    content: '-'
+
+.pagination
+  width: 100%
+  margin: 20px auto
+  @include display-center
+  li
+    margin: 0 10px 0 0
+    &:last-child
+      margin: 0
+    a
+      width: 30px
+      height: 30px
+      background: #fff
+      padding: 2px
+      @include display-center
+      text-align: center
+      color: #000
+      font-weight: 500
+      &:hover
+        background: $yellow
+    .active
+      background: $yellow
+      color: #000
+    .svg-icon
+      fill: $blue
+      max-width: 16px
+
+.recommended-section
+  .container
+    padding: 20px 15px 40px
+  h2
+    margin: 0 auto
+
+
 @import "media"
 // Всегда в конце

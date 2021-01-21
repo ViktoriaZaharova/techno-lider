@@ -58,3 +58,18 @@ $('[name="phone"]').mask('+38(099) 999-99-99');
 $('.btn-dropdown').on('click', function () {
    $(this).parents('.menu-catalog__item').toggleClass('active').find('.menu-catalog__dropdown').slideToggle();
 });
+
+$('.subcategory-button').on('click', function () {
+   $(this).toggleClass('click').siblings('.subcategory-body').slideToggle();
+});
+
+// $(".js-tab-trigger").on("click", function () {
+//     let id = $(this).attr('data-tab'),
+//         content = $('.js-tab-content[data-tab="'+ id +'"]');
+//
+//     $('.js-tab-trigger.active').removeClass('active'); // 1
+//     $(this).addClass('active'); // 2
+//
+//     $('.js-tab-content.active').removeClass('active'); // 3
+//     content.addClass('active'); // 4
+// });
