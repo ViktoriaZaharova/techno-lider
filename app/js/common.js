@@ -54,3 +54,7 @@ $('.btn-close').on("click", function () {
 });
 
 $('[name="phone"]').mask('+38(099) 999-99-99');
+
+$('.btn-dropdown').on('click', function () {
+   $(this).parents('.menu-catalog__item').toggleClass('active').find('.menu-catalog__dropdown').slideToggle();
+});

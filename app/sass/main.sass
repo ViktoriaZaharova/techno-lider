@@ -1041,5 +1041,103 @@ footer
     width: 100%
     height: 100%
 
+//catalog
+.sidebar
+  max-width: 300px
+  width: 100%
+  h3
+    font-weight: 500
+    margin: 0 0 10px
+    text-transform: uppercase
+    padding: 0 0 10px
+    border-bottom: 1px solid #3c2a98
+
+.sidebar-box
+  margin: 0 0 30px
+  &:last-child
+    margin: 0
+
+.input-icon
+  width: 20px
+  height: 20px
+  fill: $blue
+  display: flex
+  align-items: center
+  justify-content: center
+
+.form
+  margin: 0 auto
+  width: 100%
+  button
+    max-width: none
+  label
+    position: relative
+  .input-icon
+    position: absolute
+    top: 10px
+    left: 10px
+  input
+    padding: 0 10px 0 40px
+
+.menu-catalog
+  background: #fff
+  width: 100%
+  font-size: 14px
+  border: 1px solid #d4d4d4
+  li
+    a
+      color: #000
+
+.menu-catalog__item
+  position: relative
+  border-top: 1px solid #d4d4d4
+  &:first-child
+    border: none
+
+.menu-catalog__item.active
+  .menu-catalog__links
+    background: rgba($blue, .4)
+  .btn-dropdown
+    &:before
+      content: '-'
+
+
+.menu-catalog__links
+  position: relative
+  width: 100%
+  padding: 7px 35px 7px 15px
+  min-height: 33px
+
+.btn-dropdown
+  position: absolute
+  right: 0
+  top: 0
+  width: 33px
+  height: 33px
+  cursor: pointer
+  &:before
+    content: '+'
+    position: absolute
+    transform: translate(-50%,-50%)
+    left: 50%
+    top: 50%
+    transition: .3s ease
+    font-size: 18px
+
+.menu-catalog__dropdown
+  width: 100%
+  display: none
+  background: rgba($blue, .2)
+  li
+    a
+      padding: 5px 20px
+      font-size: 12px
+      &:before
+        content: '-'
+        display: inline-block
+        margin: 0 5px 0 0
+      &:hover
+        color: $blue
+
 @import "media"
 // Всегда в конце
