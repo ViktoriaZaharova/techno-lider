@@ -40,7 +40,7 @@
     </li>
     <li class="main-menu__item"><a href="delivery.html" class="main-menu__links">Доставка</a></li>
     <li class="main-menu__item"><a href="about.html" class="main-menu__links">O компании</a></li>
-    <li class="main-menu__item"><a href="basket.html" class="main-menu__links">Отзывы</a></li>
+    <li class="main-menu__item"><a href="reviews.html" class="main-menu__links">Отзывы</a></li>
   </ul>
 
   <div class="box-contacts">
@@ -178,7 +178,7 @@
           </li>
           <li class="main-menu__item"><a href="delivery.html" class="main-menu__links">Доставка</a></li>
           <li class="main-menu__item"><a href="about.html" class="main-menu__links">O компании</a></li>
-          <li class="main-menu__item"><a href="basket.html" class="main-menu__links">Отзывы</a></li>
+          <li class="main-menu__item"><a href="reviews.html" class="main-menu__links">Отзывы</a></li>
         </ul>
       </nav>
     </div>
@@ -486,7 +486,7 @@
         <div class="sidebar-box">
           <h3>Заказать звонок</h3>
 
-          <form method="post" class="form">
+          <form method="post" class="form form-callback">
             <label>
               <span class="input-icon"><svg class="svg-icon"><use
                   xlink:href="img/sprite.svg#user-icon"></use></svg></span>
@@ -1900,6 +1900,35 @@
 
   </div>
 </footer>
+
+<!--modal-->
+<div class="modal__div" id="callback__modal">
+  <div class="modal__wrapper">
+    <div class="modal__close"></div>
+    <h2>Заказать звонок</h2>
+
+    <form method="post" class="form form-callback">
+      <label>
+              <span class="input-icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#user-icon"></use></svg></span>
+        <input type="text" placeholder="Имя" name="name">
+      </label>
+      <label>
+              <span class="input-icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#icon-phone"></use></svg></span>
+        <input type="text" placeholder="Телефон" name="phone" required>
+      </label>
+      <label>
+              <span class="input-icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#icon-email"></use></svg></span>
+        <input type="text" placeholder="Email" name="mail" required>
+      </label>
+      <button type="submit" class="btn btn-accent">Отправить</button>
+    </form>
+  </div>
+</div>
+<!-- Пoдлoжкa -->
+<div class="overlay"></div>
 
 <script src="js/jquery.min.js"></script>
 <script src="js/libs.min.js"></script>

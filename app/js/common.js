@@ -1,3 +1,4 @@
+// slider page
 $('.main-slider').slick({
     slidesToShow: 1,
     arrows: true,
@@ -45,16 +46,19 @@ $('.products-slider').slick({
     ]
 });
 
+// mobile menu
 $('.btn-burger').on("click", function () {
-   $('.mobile-menu').fadeToggle();
+    $('.mobile-menu').fadeToggle();
 });
 
 $('.mobile-menu .btn-close').on("click", function () {
     $('.mobile-menu').fadeOut();
 });
 
+// mask phone
 $('[name="phone"]').mask('+38(099) 999-99-99');
 
+// dropdown menu
 $('.btn-dropdown').on('click', function () {
    $(this).parents('.menu-catalog__item').toggleClass('active').find('.menu-catalog__dropdown').slideToggle();
 });
@@ -63,10 +67,68 @@ $('.subcategory-button').on('click', function () {
    $(this).toggleClass('click').siblings('.subcategory-body').slideToggle();
 });
 
+// filter mobile
 $('.btn-filter').on('click', function () {
-   $('.sidebar').fadeToggle();
+    $('.sidebar').fadeToggle();
 });
 
 $('.sidebar .btn-close').on('click', function () {
     $('.sidebar').fadeOut();
 });
+
+// active links menu
+$('.cabinet-menu li a').each(function () {
+    var location = window.location.href;
+    var link = this.href;
+    if (location === link) {
+        $(this).addClass('current');
+    }
+});
+
+// cabinet menu mobile
+$('.btn-menu-cabinet').on('click', function () {
+   $(this).toggleClass('click').siblings('.cabinet-menu').slideToggle();
+});
+
+
+// модальные окна
+$(function () {
+    var overlay = $('.overlay');
+    var open_modal = $('.open_modal');
+    var close = $('.modal__close, .overlay');
+    var modal = $('.modal__div');
+
+    open_modal.on('click',function (event) {
+        event.preventDefault();
+
+        modal.css('display', 'none').animate({
+            opacity: 0,
+            top: '45%'
+        }, 200);
+
+        var div = $(this).attr('href');
+        overlay.fadeIn(400,
+            function () {
+                $(div)
+                    .css('display', 'flex')
+                    .animate({
+                        opacity: 1,
+                        top: '50%'
+                    }, 200);
+            });
+    });
+
+    close.on('click', function () {
+        modal
+            .animate({
+                    opacity: 0,
+                    top: '45%'
+                }, 200,
+                function () {
+                    $(this).css('display', 'none');
+                    overlay.fadeOut(400);
+                }
+            );
+    });
+});
+//end

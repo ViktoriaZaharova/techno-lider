@@ -132,9 +132,7 @@
 
       <div class="links-group">
         <a href="registration.html" class="links-cabinet">
-          <svg class="svg-icon">
-            <use xlink:href="img/sprite.svg#user-icon"></use>
-          </svg>
+         <span>АВ</span>
         </a>
 
         <a href="#" class="box-basket">
@@ -185,23 +183,38 @@
   </div>
 </header>
 
-<section class="content-page">
+<section class="content-page page-cabinet">
   <div class="container">
-    <ul class="breadcrumb">
-      <li><a href="index.html">Главная</a></li>
-      <li><span>Восстановить пароль</span></li>
-    </ul>
 
-    <h1>Восстановить пароль</h1>
+    <div class="cabinet-box">
+      <div class="btn-menu-cabinet">
+        Меню - Кабинет
+      </div>
 
-    <form method="post" class="form">
-      <label>
-        <span class="input-title">Ваш email</span>
-        <input type="text" placeholder="test@gmail.com" name="mail" required>
-      </label>
+      <ul class="cabinet-menu">
+        <li><a href="cabinet.html">Личные данные</a></li>
+        <li><a href="orders-cabinet.html">Заказы</a></li>
+        <li><a href="list-favorites-cabinet.html">Список желаний</a></li>
+        <li><a href="password-cabinet.html">Изменить пароль</a></li>
+        <li><a href="email-cabinet.html" class="active">Изменить email</a></li>
+      </ul>
+    </div>
 
-      <button type="submit" class="btn btn-accent">Восстановить</button>
-    </form>
+    <div class="cabinet-wrapper">
+      <h1>Изменить email</h1>
+
+      <form method="post" class="form">
+        <label>
+          <span class="input-title">Новый email <sup>*</sup></span>
+          <input type="text" placeholder="test@gmail.com" name="new_mail" required>
+        </label>
+
+        <div class="necessarily">
+          <sup class="color-accent">*</sup> - обязательные поля
+        </div>
+        <button type="submit" class="btn btn-accent">Сохранить</button>
+      </form>
+    </div>
   </div>
 </section>
 

@@ -239,6 +239,10 @@ h2
   width: 33.3%
   padding: 0 10px
 
+.col-12
+  width: 100%
+  padding: 0 10px
+
 footer, header, main
   .container
     background: transparent
@@ -296,6 +300,10 @@ footer, header, main
     border-color: $yellow
     svg
       fill: $yellow
+  span
+    font-weight: bold
+    text-transform: uppercase
+    font-size: 14px
 
 .total-orders-basket
   position: absolute
@@ -951,6 +959,9 @@ footer
   display: block
   margin: 0 0 5px
   font-size: 14px
+  sup
+    color: $accent
+
 
 //delivery
 .delivery-box
@@ -1067,7 +1078,7 @@ footer
   align-items: center
   justify-content: center
 
-.form
+.form-callback
   margin: 0 auto
   width: 100%
   button
@@ -1288,6 +1299,160 @@ select
     height: 20px
     margin: 0 10px 0 0
     fill: $blue
+
+//cabinet page
+.cabinet-box
+  max-width: 250px
+  width: 100%
+
+.cabinet-menu
+  li
+    a
+      padding: 10px 20px
+      color: #000
+      font-weight: 600
+      &:hover
+        color: $blue
+    .active
+      color: $blue
+      background: #fff
+
+
+.cabinet-wrapper
+  width: calc(100% - 250px)
+  background: #fff
+  padding: 10px 30px 30px
+
+.necessarily
+  font-size: 12px
+  font-weight: 500
+
+//modal
+.modal__div
+  position: fixed
+  max-width: 400px
+  width: 100%
+  height: 100%
+  top: 45%
+  left: 50%
+  transform: translate(-50%, -50%)
+  z-index: 101
+  overflow: auto
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  display: none
+  opacity: 0
+
+.modal__close
+  position: absolute
+  right: 10px
+  top: 10px
+  width: 20px
+  height: 20px
+  cursor: pointer
+  &:before, &:after
+    content: ''
+    position: absolute
+    width: 1px
+    height: 100%
+    background: $blue
+    left: 10px
+    top: 0
+  &:before
+    transform: rotate(45deg)
+  &:after
+    transform: rotate(135deg)
+
+.modal__wrapper
+  background: #fff
+  width: 100%
+  height: auto
+  overflow: auto
+  margin: 50px auto
+  padding: 30px 40px
+  box-sizing: border-box
+  position: relative
+
+.overlay
+  z-index: 100
+  position: fixed
+  background-color: #000
+  opacity: 0.8
+  -moz-opacity: 0.8
+  filter: alpha(opacity = 80)
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  cursor: pointer
+  display: none
+
+.btn-menu-cabinet
+  width: 100%
+  font-size: 14px
+  background: #fff
+  padding: 8px 20px
+  border: 1px solid #d4d4d4
+  display: none
+  margin: 0 0 10px
+  position: relative
+  justify-content: space-between
+  font-weight: 500
+  &:after
+    content: '+'
+    display: inline-block
+    transition: .3s ease
+
+.btn-menu-cabinet.click
+  &:after
+    content: '-'
+
+.orders-box
+  padding: 10px
+  margin: 0 0 20px
+  border: 1px solid #d4d4d4
+  font-size: 14px
+  @include display-stretch
+  &:last-child
+    margin: 0
+
+.orders-box__img
+  max-width: 150px
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: center
+
+
+.orders-box__body
+  width: calc(100% - 150px)
+  padding: 0 0 0 20px
+  @include display-start-start
+  p
+    font-weight: 500
+    margin: 0 0 5px
+
+.orders-box__title
+  font-weight: 600
+  color: #000
+  margin: 0 0 5px
+  font-size: 16px
+
+.article
+  color: #444
+  font-size: 14px
+
+.orders-box__body-box
+  width: 20%
+  text-align: center
+
+
+.orders-box__body-box-info
+  width: 60%
+
+.date-delivery
+  margin: 10px 0
 
 
 @import "media"
