@@ -93,10 +93,10 @@ $('.btn-menu-cabinet').on('click', function () {
 
 // модальные окна
 $(function () {
-    var overlay = $('.overlay');
-    var open_modal = $('.open_modal');
-    var close = $('.modal__close, .overlay');
-    var modal = $('.modal__div');
+    let overlay = $('.overlay');
+    let open_modal = $('.open_modal');
+    let close = $('.modal__close, .overlay');
+    let modal = $('.modal__div');
 
     open_modal.on('click',function (event) {
         event.preventDefault();
@@ -106,7 +106,7 @@ $(function () {
             top: '45%'
         }, 200);
 
-        var div = $(this).attr('href');
+        let div = $(this).attr('href');
         overlay.fadeIn(400,
             function () {
                 $(div)
@@ -132,3 +132,27 @@ $(function () {
     });
 });
 //end
+
+// amount
+$('.down').on("click", function () {
+    let $input = $(this).parent().find('input');
+    let count = parseInt($input.val()) - 1;
+    count = count < 1 ? 1 : count;
+    $input.val(count);
+    $input.change();
+    return false;
+});
+$('.up').on("click",function () {
+    let $input = $(this).parent().find('input');
+    $input.val(parseInt($input.val()) + 1);
+    $input.change();
+    return false;
+});
+
+// tabs
+$('ul.tabs__caption').on('click', 'li:not(.active)', function () {
+    $(this)
+        .addClass('active').siblings().removeClass('active')
+        .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+});
+

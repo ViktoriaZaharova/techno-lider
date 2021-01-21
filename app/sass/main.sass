@@ -160,12 +160,37 @@ button
   width: 100%
   height: 60px
 
+.btn-add-basket
+  height: 50px
+  margin: 20px auto 0
+  color: #000
+  svg
+    width: 20px
+    height: 20px
+    fill: #000
+    margin: 0 10px 0 0
+
 .btn-accent
   background: $yellow
   color: #333
   font-weight: 500
   &:hover
     box-shadow: 0 3px 0 0 #ffa813
+
+.btn-red
+  background: $accent
+  color: #fff
+  font-weight: 500
+  &:hover
+    box-shadow: 0 3px 0 0 #b22419
+  .svg-icon
+    fill: #fff
+
+.btn-group
+  width: 100%
+  @include display-between
+  .btn
+    margin: 20px 0 0
 
 .p-50
   padding: 50px 0
@@ -294,6 +319,7 @@ footer, header, main
   height: 36px
   padding: 5px
   margin: 0 25px 0 0
+  color: $blue
   svg
     fill: $blue
   &:hover
@@ -687,16 +713,7 @@ footer
   &:hover, &:focus
     fill: $accent
 
-.btn-add-basket
-  height: 50px
-  margin: 20px auto 0
-  //text-transform: uppercase
-  color: #000
-  svg
-    width: 20px
-    height: 20px
-    fill: #000
-    margin: 0 10px 0 0
+
 
 .list-rating
   margin: 0 auto 10px
@@ -1454,6 +1471,99 @@ select
 .date-delivery
   margin: 10px 0
 
+//.page-product
+.page-product-wrapper
+  @include display-start-start
+
+.product-photo
+  max-width: 500px
+  height: 500px
+  width: 100%
+  background: #fff
+  padding: 20px
+  @include display-center
+
+.product-info
+  width: calc(100% - 500px)
+  padding: 0 0 0 20px
+  .list-rating
+    width: auto
+    margin: 0
+  .price-wrapper
+    font-size: 20px
+    font-weight: 600
+    margin: 0
+  .new-price
+    font-size: 22px
+  .wrapper
+    margin: 0 0 20px
+
+.amount
+  @include display-center
+  span
+    @include display-center
+    width: 40px
+    height: 40px
+    background: $blue
+    color: #fff
+    cursor: pointer
+    font-size: 20px
+  input
+    max-width: 100px
+    width: 100%
+    text-align: center
+    border: none
+    font-size: 16px
+
+.product-info-box
+  h3
+    font-weight: bold
+    margin: 0 0 10px
+
+.list-characteristics
+  color: #444
+  font-size: 14px
+  li
+    margin: 0 0 10px
+    @include display-start
+    &:last-child
+      margin: 0
+    span
+      font-weight: 500
+      display: inline-block
+      margin: 0 0 0 5px
+      color: #000
+
+.product-info-details
+  margin: 30px 0 0
+
+.tabs__caption
+  border-bottom: 1px solid #d4d4d4
+  font-weight: 500
+  @include display-start
+  li
+    padding: 10px 20px
+    cursor: pointer
+    transition: .3s ease
+    border-bottom: 1px solid transparent
+    margin: 0 0 -1px
+  .active
+    border-bottom-color: $blue
+    color: $blue
+      
+.tabs__content
+  display: none
+  font-size: 14px
+  padding: 20px
+  background: #fff
+  margin: 20px 0 0
+    
+.tabs__content.active
+  display: flex
+  flex-wrap: wrap
+    
+    
+      
 
 @import "media"
 // Всегда в конце

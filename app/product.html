@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Технолидер - магазин сельхоззапчастей</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<div class="mobile-menu">
+  <div class="btn-close"></div>
+  <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+
+  <ul class="main-menu">
+    <li class="main-menu__item">
+      <a href="index.html" class="main-menu__links">Главная</a>
+    </li>
+    <li class="main-menu__item">
+      <a href="catalog.html" class="main-menu__links links-drop">Каталог</a>
+    </li>
+    <li class="main-menu__item"><a href="delivery.html" class="main-menu__links">Доставка</a></li>
+    <li class="main-menu__item"><a href="about.html" class="main-menu__links">O компании</a></li>
+    <li class="main-menu__item"><a href="reviews.html" class="main-menu__links">Отзывы</a></li>
+  </ul>
+
+  <div class="box-contacts">
+    <a href="tel:+79104430909" class="phone">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#icon-phone"></use>
+      </svg>
+      +7 (910) 443-09-09</a>
+    <a href="#callback__modal" class="open_modal color-grey text-decoration">Перезвонить вам?</a>
+  </div>
+
+  <div class="box-social">
+    <h3>Мы в соцсетях:</h3>
+
+    <ul class="list-social">
+      <li><a href="#">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#icon-vk"></use>
+        </svg>
+      </a></li>
+      <li><a href="#">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#icon-fb"></use>
+        </svg>
+      </a></li>
+      <li><a href="#">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#icon-tw"></use>
+        </svg>
+      </a></li>
+      <li><a href="#">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#icon-ig"></use>
+        </svg>
+      </a></li>
+    </ul>
+  </div>
+
+  <ul class="list-message">
+    <li><a href="#">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#icon-whatsapp"></use>
+      </svg>
+      <span>whats-app</span>
+    </a></li>
+    <li><a href="#">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#icon-telegram"></use>
+      </svg>
+      <span>telegram</span>
+    </a></li>
+    <li><a href="#">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#icon-skype"></use>
+      </svg>
+      <span>skype</span>
+    </a></li>
+    <li><a href="mailto:mail@mail.com">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#icon-email"></use>
+      </svg>
+      <span>mail@mail.com</span>
+    </a></li>
+  </ul>
+</div>
+
+<header>
+  <div class="header-top">
+    <div class="container">
+      <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+
+      <form method="post" class="form-search">
+        <label><input type="text" placeholder="Найти" required></label>
+        <button type="submit">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#icon-search"></use>
+          </svg>
+        </button>
+      </form>
+
+      <div class="box-contacts">
+        <a href="tel:+79104430909" class="phone">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#icon-phone"></use>
+          </svg>
+          +7 (910) 443-09-09</a>
+        <a href="#callback__modal" class="open_modal color-grey text-decoration">Перезвонить вам?</a>
+      </div>
+
+      <div class="links-group">
+        <a href="registration.html" class="links-cabinet">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#user-icon"></use>
+          </svg>
+        </a>
+
+        <a href="#" class="box-basket">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#icon-basket"></use>
+          </svg>
+          <span class="total-orders-basket">1</span>
+        </a>
+
+        <div class="btn-burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-bottom">
+    <div class="container">
+      <nav class="navigation-main">
+        <ul class="main-menu">
+          <li class="main-menu__item">
+            <a href="index.html" class="main-menu__links">Главная</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="catalog.html" class="main-menu__links links-drop">Каталог</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Подкатегория 1</a>
+                <ul class="dropdown-menu__level">
+                  <li><a href="#">Подкатегория 1-1</a></li>
+                  <li><a href="#">Подкатегория 1-1</a></li>
+                  <li><a href="#">Подкатегория 1-1</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Подкатегория 2</a></li>
+              <li><a href="#">Подкатегория 3</a></li>
+              <li><a href="#">Подкатегория 4</a></li>
+              <li><a href="#">Подкатегория 5</a></li>
+            </ul>
+          </li>
+          <li class="main-menu__item"><a href="delivery.html" class="main-menu__links">Доставка</a></li>
+          <li class="main-menu__item"><a href="about.html" class="main-menu__links">O компании</a></li>
+          <li class="main-menu__item"><a href="reviews.html" class="main-menu__links">Отзывы</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<section class="content-page page-product">
+  <div class="container">
+    <ul class="breadcrumb">
+      <li><a href="index.html">Главная</a></li>
+      <li><span>H163131-rt Сегмент ножа жатки</span></li>
+    </ul>
+
+    <div class="page-product-wrapper w-100">
+      <a href="img/category1.jpg" class="product-photo" data-fancybox="image"><img src="img/category1.jpg" alt=""></a>
+
+      <div class="product-info">
+        <h1>H163131-rt Сегмент ножа жатки</h1>
+
+        <div class="wrapper">
+          <div class="article">Артикул: 021428</div>
+
+          <ul class="list-rating">
+            <li>
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#star1"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#star1"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#star1"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#star1"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#star"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+
+
+        <div class="wrapper">
+          <div class="price-wrapper">
+            <div class="old-price">1900 грн</div>
+            <div class="new-price">1200 грн</div>
+          </div>
+
+          <div class="amount">
+            <span class="down">-</span>
+            <input type="text" value="1"/>
+            <span class="up">+</span>
+          </div>
+        </div>
+
+        <div class="product-info-box">
+          <h3>Характеристики</h3>
+          <ul class="list-characteristics">
+            <li>
+              <p>Производитель</p>
+              <span>Франция</span>
+            </li>
+            <li>
+              <p>Размеры:</p>
+              <span>120 х 20 х 45</span>
+            </li>
+            <li>
+              <p>Вес:</p>
+              <span>20 кг</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="btn-group">
+          <a href="#" class="btn btn-add-basket btn-accent">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#icon-basket"></use>
+            </svg>
+            <span>купить</span>
+          </a>
+
+          <a href="#" class="btn btn-add-basket btn-red">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#icon-basket"></use>
+            </svg>
+            <span>купить в 1 клик</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-info-details w-100">
+      <div class="tabs w-100">
+        <ul class="tabs__caption">
+          <li class="active">Описание</li>
+          <li>Отзывы</li>
+          <li>Доставка</li>
+          <li>Оплата</li>
+          <li>Гарантия</li>
+        </ul>
+        <div class="tabs__content active">
+          <div class="box-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque iure, maiores quas repudiandae
+              sed tempora? Architecto beatae corporis impedit ipsum nihil numquam officiis, praesentium quas sapiente
+              similique sint, tempora?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque iure, maiores quas repudiandae
+              sed tempora? Architecto beatae corporis impedit ipsum nihil numquam officiis, praesentium quas sapiente
+              similique sint, tempora?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque iure, maiores quas repudiandae
+              sed tempora? Architecto beatae corporis impedit ipsum nihil numquam officiis, praesentium quas sapiente
+              similique sint, tempora?</p>
+          </div>
+        </div>
+        <div class="tabs__content">
+          <div class="box-text">
+            <p>Нет отзывов об этом товаре.</p>
+          </div>
+        </div>
+        <div class="tabs__content">
+          <div class="box-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque iure, maiores quas repudiandae
+              sed tempora? Architecto beatae corporis impedit ipsum nihil numquam officiis, praesentium quas sapiente
+              similique sint, tempora?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque iure, maiores quas repudiandae
+              sed tempora? Architecto beatae corporis impedit ipsum nihil numquam officiis, praesentium quas sapiente
+              similique sint, tempora?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque iure, maiores quas repudiandae
+              sed tempora? Architecto beatae corporis impedit ipsum nihil numquam officiis, praesentium quas sapiente
+              similique sint, tempora?</p>
+          </div>
+        </div>
+        <div class="tabs__content">
+          <div class="box-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque iure, maiores quas repudiandae
+              sed tempora? Architecto beatae corporis impedit ipsum nihil numquam officiis, praesentium quas sapiente
+              similique sint, tempora?</p>
+          </div>
+        </div>
+        <div class="tabs__content">
+          <div class="box-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque iure, maiores quas repudiandae
+              sed tempora? Architecto beatae corporis impedit ipsum nihil numquam officiis, praesentium quas sapiente
+              similique sint, tempora?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque iure, maiores quas repudiandae
+              sed tempora? Architecto beatae corporis impedit ipsum nihil numquam officiis, praesentium quas sapiente
+              similique sint, tempora?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="recommended-section">
+  <div class="container">
+
+    <h2>Рекомендуем</h2>
+
+    <div class="products-slider w-100">
+      <div class="slide">
+        <div class="product-cart">
+          <a href="#" class="btn-favorites">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#heart"></use>
+            </svg>
+          </a>
+          <div class="stick bg-yellow">Хит продаж</div>
+
+
+          <a href="#" class="product-cart__image">
+            <img src="img/product1.jpg" alt="">
+          </a>
+
+          <a href="#" class="product-cart__name">H163131-rt Сегмент ножа жатки ...</a>
+
+          <ul class="list-rating">
+            <li>
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#star1"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#star1"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#star1"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#star1"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#star"></use>
+              </svg>
+            </li>
+          </ul>
+
+          <div class="price-wrapper">
+            <div class="old-price">1900 грн</div>
+            <div class="new-price">1200 грн</div>
+          </div>
+
+          <a href="#" class="btn btn-add-basket btn-accent">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#icon-basket"></use>
+            </svg>
+            <span>купить</span>
+          </a>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="product-cart">
+          <a href="#" class="btn-favorites">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#heart"></use>
+            </svg>
+          </a>
+          <div class="stick bg-blue">Новинка</div>
+
+
+          <a href="#" class="product-cart__image">
+            <img src="img/product2.jpeg" alt="">
+          </a>
+
+          <a href="#" class="product-cart__name">AH140497 Шкив John Deere (COMBINE)</a>
+          <ul class="list-rating">
+            <li>
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#star1"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#star1"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#star1"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#star"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#star"></use>
+              </svg>
+            </li>
+          </ul>
+
+          <div class="price-wrapper">
+            <div class="new-price">2000 грн</div>
+          </div>
+          <a href="#" class="btn btn-add-basket btn-accent">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#icon-basket"></use>
+            </svg>
+            <span>купить</span>
+          </a>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="product-cart">
+          <a href="#" class="btn-favorites">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#heart"></use>
+            </svg>
+          </a>
+          <div class="stick bg-red">Распродажа</div>
+
+
+          <a href="#" class="product-cart__image">
+            <img src="img/product1.jpg" alt="">
+          </a>
+
+          <a href="#" class="product-cart__name">H163131-rt Сегмент ножа жатки ...</a>
+
+          <ul class="list-rating">
+            <li>
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#star1"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#star1"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#star1"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#star1"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#star1"></use>
+              </svg>
+            </li>
+          </ul>
+
+          <div class="price-wrapper">
+            <div class="old-price">1900 грн</div>
+            <div class="new-price">1200 грн</div>
+          </div>
+          <a href="#" class="btn btn-add-basket btn-accent">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#icon-basket"></use>
+            </svg>
+            <span>купить</span>
+          </a>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="product-cart">
+          <a href="#" class="btn-favorites">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#heart"></use>
+            </svg>
+          </a>
+          <div class="stick bg-blue">Новинка</div>
+
+
+          <a href="#" class="product-cart__image">
+            <img src="img/product2.jpeg" alt="">
+          </a>
+
+          <a href="#" class="product-cart__name">AH140497 Шкив John Deere (COMBINE)</a>
+          <ul class="list-rating">
+            <li>
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#star1"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#star1"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#star"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#star"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#star"></use>
+              </svg>
+            </li>
+          </ul>
+          <div class="price-wrapper">
+            <div class="old-price">1900 грн</div>
+            <div class="new-price">1200 грн</div>
+          </div>
+          <a href="#" class="btn btn-add-basket btn-accent">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#icon-basket"></use>
+            </svg>
+            <span>купить</span>
+          </a>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="product-cart">
+          <a href="#" class="btn-favorites">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#heart"></use>
+            </svg>
+          </a>
+          <div class="stick bg-yellow">Хит продаж</div>
+
+
+          <a href="#" class="product-cart__image">
+            <img src="img/product1.jpg" alt="">
+          </a>
+
+          <a href="#" class="product-cart__name">H163131-rt Сегмент ножа жатки ...</a>
+          <ul class="list-rating">
+            <li>
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#star1"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#star1"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#star1"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#star1"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#star1"></use>
+              </svg>
+            </li>
+          </ul>
+          <div class="price-wrapper">
+            <div class="old-price">1900 грн</div>
+            <div class="new-price">1200 грн</div>
+          </div>
+          <a href="#" class="btn btn-add-basket btn-accent">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#icon-basket"></use>
+            </svg>
+            <span>купить</span>
+          </a>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="product-cart">
+          <a href="#" class="btn-favorites">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#heart"></use>
+            </svg>
+          </a>
+          <div class="stick bg-blue">Новинка</div>
+
+          <a href="#" class="product-cart__image">
+            <img src="img/product2.jpeg" alt="">
+          </a>
+
+          <a href="#" class="product-cart__name">AH140497 Шкив John Deere (COMBINE)</a>
+          <ul class="list-rating">
+            <li>
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#star1"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#star1"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#star1"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#star1"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#star"></use>
+              </svg>
+            </li>
+          </ul>
+          <div class="price-wrapper">
+            <div class="old-price">1900 грн</div>
+            <div class="new-price">1200 грн</div>
+          </div>
+          <a href="#" class="btn btn-add-basket btn-accent">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#icon-basket"></use>
+            </svg>
+            <span>купить</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-box footer-box-first">
+      <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+
+      <div class="copyright">© 2021 Все права защищены</div>
+
+      <div class="box-payment">
+        <p>Принимаем к оплате</p>
+        <ul class="list-payment">
+          <li><a href="#"><img src="img/visa.svg" alt=""></a></li>
+          <li><a href="#"><img src="img/mastercard.svg" alt=""></a></li>
+          <li><a href="#"><img src="img/privat.png" alt=""></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-box">
+      <h3>Каталог</h3>
+      <ul class="footer-menu">
+        <li><a href="#">Подкатегория</a></li>
+        <li><a href="#">Подкатегория</a></li>
+        <li><a href="#">Подкатегория</a></li>
+        <li><a href="#">Подкатегория</a></li>
+        <li><a href="#">Подкатегория</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-box">
+      <h3>Клиентам</h3>
+      <ul class="footer-menu">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">О компании</a></li>
+        <li><a href="#">Отзывы</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-box footer-box-contacts">
+      <h3>Контактная информация</h3>
+
+      <div class="row-wrapper">
+        <div class="col-wrapper">
+          <div class="box-contacts">
+            <a href="tel:+79104430909" class="phone">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#icon-phone"></use>
+              </svg>
+              +7 (910) 443-09-09</a>
+
+            <a href="tel:+79104430909" class="phone">
+              +7 (910) 443-09-09</a>
+            <a href="#callback__modal" class="open_modal links-call color-white text-decoration">Перезвонить вам?</a>
+          </div>
+
+          <div class="box-social">
+            <h3>Мы в соцсетях:</h3>
+
+            <ul class="list-social">
+              <li><a href="#">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#icon-vk"></use>
+                </svg>
+              </a></li>
+              <li><a href="#">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#icon-fb"></use>
+                </svg>
+              </a></li>
+              <li><a href="#">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#icon-tw"></use>
+                </svg>
+              </a></li>
+              <li><a href="#">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#icon-ig"></use>
+                </svg>
+              </a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-wrapper">
+          <ul class="list-message">
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#icon-whatsapp"></use>
+              </svg>
+              <span>whats-app</span>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#icon-telegram"></use>
+              </svg>
+              <span>telegram</span>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#icon-skype"></use>
+              </svg>
+              <span>skype</span>
+            </a></li>
+            <li><a href="mailto:mail@mail.com">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#icon-email"></use>
+              </svg>
+              <span>mail@mail.com</span>
+            </a></li>
+          </ul>
+
+          <div class="address">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#icon-location"></use>
+            </svg>
+            <p>Киев, ул. Крещатик</p>
+
+            <a href="#" class="color-white links-call text-decoration">Карта проезда</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</footer>
+
+<!--modal-->
+<div class="modal__div" id="callback__modal">
+  <div class="modal__wrapper">
+    <div class="modal__close"></div>
+    <h2>Заказать звонок</h2>
+
+    <form method="post" class="form form-callback">
+      <label>
+              <span class="input-icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#user-icon"></use></svg></span>
+        <input type="text" placeholder="Имя" name="name">
+      </label>
+      <label>
+              <span class="input-icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#icon-phone"></use></svg></span>
+        <input type="text" placeholder="Телефон" name="phone" required>
+      </label>
+      <label>
+              <span class="input-icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#icon-email"></use></svg></span>
+        <input type="text" placeholder="Email" name="mail" required>
+      </label>
+      <button type="submit" class="btn btn-accent">Отправить</button>
+    </form>
+  </div>
+</div>
+<!-- Пoдлoжкa -->
+<div class="overlay"></div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

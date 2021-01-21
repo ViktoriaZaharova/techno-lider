@@ -35,6 +35,13 @@
   .orders-box__body
     width: calc(100% - 100px)
 
+  .product-photo
+    max-width: 300px
+    height: 300px
+
+  .product-info
+    width: calc(100% - 300px)
+
 @media only screen and (max-width : 870px)
   .orders-box__body-box
     width: 50%
@@ -121,6 +128,15 @@
   .btn-menu-cabinet
     display: flex
     flex-wrap: wrap
+
+  .product-photo
+    max-width: 400px
+    height: auto
+    margin: 0 auto 20px
+
+  .product-info
+    width: 100%
+    padding: 0
 
 @media only screen and (max-width : 710px)
   .form-search
@@ -242,6 +258,19 @@
   .orders-box__img
     margin: 0 auto 10px
     max-width: 150px
+
+  .product-info .price-wrapper
+    width: 100%
+    margin: 0 0 10px
+    justify-content: flex-start
+
+
+  .btn-group
+    flex-direction: column
+    align-items: flex-start
+
+  .tabs__caption li
+    padding: 10px
 
 @media only screen and (max-width : 420px)
   .col-3
