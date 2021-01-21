@@ -1051,6 +1051,8 @@ footer
     text-transform: uppercase
     padding: 0 0 10px
     border-bottom: 1px solid #3c2a98
+  .btn-close
+    display: none
 
 .sidebar-box
   margin: 0 0 30px
@@ -1100,7 +1102,6 @@ footer
   .btn-dropdown
     &:before
       content: '-'
-
 
 .menu-catalog__links
   position: relative
@@ -1177,14 +1178,8 @@ footer
   list-style-type: disc
   padding: 0 0 0 20px
 
-.js-tab-content
-  display: none
-
-.js-tab-content.active
-  display: block
 
 .sorting-box
-
   @include display-start
   p
     font-size: 12px
@@ -1194,6 +1189,7 @@ select
   font-family: $default-font
   padding: 10px 30px 10px 20px
   cursor: pointer
+  border: 1px solid #d4d4d4
 
 .icon-select
   position: absolute
@@ -1280,6 +1276,18 @@ select
     padding: 20px 15px 40px
   h2
     margin: 0 auto
+
+.btn-filter
+  font-size: 14px
+  background: #fff
+  padding: 8px 20px
+  border: 1px solid #d4d4d4
+  display: none
+  .svg-icon
+    width: 20px
+    height: 20px
+    margin: 0 10px 0 0
+    fill: $blue
 
 
 @import "media"
