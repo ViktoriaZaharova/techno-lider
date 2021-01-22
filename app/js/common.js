@@ -156,3 +156,16 @@ $('ul.tabs__caption').on('click', 'li:not(.active)', function () {
         .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
 });
 
+// stars rating
+$('.list-estimate li').on('click', function () {
+    let onStar = parseInt($(this).data('value'), 10); // The star currently selected
+    let stars = $(this).parent().children('li.star');
+
+    for (i = 0; i < stars.length; i++) {
+        $(stars[i]).removeClass('selected');
+    }
+
+    for (i = 0; i < onStar; i++) {
+        $(stars[i]).addClass('selected');
+    }
+});

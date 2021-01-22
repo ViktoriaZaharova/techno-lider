@@ -726,6 +726,8 @@ footer
     .svg-icon
       width: 15px
       height: 15px
+      fill: #ccc
+    .svg-icon1
       fill: $yellow
 
 .stick
@@ -1603,6 +1605,104 @@ select
 
 .comment-admin
   padding: 0 0 0 40px
+
+.form-reviews
+  button
+    margin: 20px 0 0
+    height: 50px
+
+.box-question-form
+  width: 100%
+  margin: 0 0 20px
+  background: #fff
+  padding: 20px
+  border: 1px solid #d4d4d4
+
+//.radio
+.radio
+  position: relative
+  display: flex
+  align-items: center
+  flex-direction: column
+  text-align: center
+  cursor: pointer
+  font-size: 14px
+  font-weight: 500
+  margin: 0
+  .label
+    color: #93949c
+    display: inline-block
+
+.radio-inp
+  display: none
+
+.radio-inp:checked
+  ~ .label
+    color: $blue
+  ~ .radio-icon
+    .svg-icon
+      fill: $blue
+
+.radio-icon
+  min-width: 20px
+  width: 20px
+  height: 20px
+  margin: 0 auto 5px
+  display: flex
+  align-items: center
+  justify-content: center
+  .svg-icon
+    fill: #93949c
+
+.list-radio
+  @include display-start-start
+  li
+    margin: 0 20px 0 0
+    &:last-child
+      margin: 0
+
+.box-question-form__item
+  @include display-between
+  font-size: 14px
+  padding: 10px 0
+  border-bottom: 1px solid #d4d4d4
+  font-weight: 500
+  &:last-child
+    border: none
+  .label-select
+    width: 100%
+    margin: 10px 0 0
+  select
+    width: 100%
+  h3
+    margin: 0 0 10px
+    width: 100%
+    font-weight: 600
+  label
+    width: 100%
+
+.box-question-form__rating
+  border: none
+
+.list-estimate
+  @include display-start
+  li
+    width: 30px
+    height: 30px
+    transition: .3s ease
+    margin: 0 10px 0 0
+    cursor: pointer
+    .svg-icon
+      fill: #ccc
+    &:last-child
+      margin: 0
+    &:hover
+      .svg-icon
+        fill: $yellow
+  .selected
+    .svg-icon
+      fill: $yellow
+
 
 @import "media"
 // Всегда в конце
