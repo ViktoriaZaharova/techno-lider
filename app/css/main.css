@@ -1796,8 +1796,6 @@ select {
           justify-content: center; }
 
 .orders-box__body {
-  width: calc(100% - 150px);
-  padding: 0 0 0 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1972,8 +1970,6 @@ select {
     padding: 0 0 0 20px; }
   .orders-box__img {
     max-width: 100px; }
-  .orders-box__body {
-    width: calc(100% - 100px); }
   .product-photo {
     max-width: 300px;
     height: 300px; }
