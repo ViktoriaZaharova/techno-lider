@@ -1537,9 +1537,72 @@ select
 .product-info-details
   margin: 30px 0 0
 
+//page reviews
+.add-reviews
+  height: 50px
 
-    
-      
+.reviews-box
+  width: 100%
+  background: #fff
+  padding: 20px
+  border: 1px solid #d4d4d4
+  margin: 20px 0 0
+  font-size: 14px
+  @include display-start-start
+
+.reviews-box-wrap
+  width: 100%
+  @include display-start-start
+  margin: 0 0 20px
+
+.reviews-box-line
+  @include display-start
+  width: 100%
+  margin: 0 0 20px
+  .list-rating
+    margin: 0 0 0 30px
+    width: auto
+
+.reviews-box-user, .reviews-box-date
+  @include display-start
+
+.reviews-box-user
+  font-weight: 500
+  margin: 0 30px 0 0
+  font-size: 16px
+
+.reviews-box-date
+  font-size: 14px
+  color: #444
+
+
+.reviews-box-user__icon, .reviews-box-date .svg-icon
+  width: 20px
+  height: 20px
+  min-width: 20px
+  margin: 0 10px 0 0
+  fill: $blue
+  
+.reviews-box-questions
+  width: 100%
+  margin: 0 0 20px
+  padding: 20px
+  background: #eee
+
+
+.reviews-box-questions__item
+  margin: 0 0 20px
+  width: 100%
+  &:last-child
+    margin: 0
+  h4
+    font-weight: 500
+    margin: 0 0 5px
+  .box-text
+    font-style: italic
+
+.comment-admin
+  padding: 0 0 0 40px
 
 @import "media"
 // Всегда в конце
