@@ -92,7 +92,7 @@ a
   &:hover, &:focus
     text-decoration: none
     outline: none
-    
+
 input, textarea, select
   outline: none
   box-shadow: none
@@ -100,6 +100,7 @@ input, textarea, select
   padding: 0
   box-sizing: border-box
   font-family: $default-font
+
   &:hover, &:focus
     outline: none
 
@@ -109,6 +110,7 @@ input
   padding: 0 15px
   border: 1px solid #d4d4d4
   color: #000
+
   &::placeholder
     color: #333
 
@@ -122,6 +124,7 @@ button
   border: none
     radius: 0
   cursor: pointer
+
   &:hover, &:focus
     outline: none
 
@@ -164,6 +167,7 @@ button
   height: 50px
   margin: 20px auto 0
   color: #000
+
   svg
     width: 20px
     height: 20px
@@ -174,6 +178,7 @@ button
   background: $yellow
   color: #333
   font-weight: 500
+
   &:hover
     box-shadow: 0 3px 0 0 #ffa813
 
@@ -181,20 +186,23 @@ button
   background: $accent
   color: #fff
   font-weight: 500
+
   &:hover
     box-shadow: 0 3px 0 0 #b22419
+
   .svg-icon
     fill: #fff
 
 .btn-group
   width: 100%
   @include display-between
+
   .btn
     margin: 20px 0 0
 
 .p-50
   padding: 50px 0
-  
+
 .p-30
   padding: 30px 0
 
@@ -220,24 +228,30 @@ h2
   width: 100%
   font-size: 14px
   @include display-start
+
   li
     a
       color: $blue
       text-decoration: underline
+
       &:hover
         color: #000
+
       &:after
         content: '/'
         display: inline-block
         margin: 0 5px
+
     span
       color: rgba(#000, .7)
 
 .box-text
   font-size: 14px
   line-height: 1.5
+
   p
     margin: 0 0 10px
+
     &:last-child
       margin: 0
 
@@ -253,7 +267,7 @@ h2
 
 .bg-red
   background: $accent
-  
+
 .row
   margin: 0 -10px
   display: flex
@@ -278,6 +292,7 @@ footer, header, main
 
 .header-top
   padding: 10px 0
+
   .container
     justify-content: space-between
     align-items: center
@@ -285,6 +300,7 @@ footer, header, main
 .phone
   font-weight: 500
   color: #000
+
   svg
     width: 14px
     height: 14px
@@ -303,8 +319,10 @@ footer, header, main
   width: 34px
   height: 34px
   position: relative
+
   svg
     fill: $blue
+
   &:hover
     svg
       fill: $yellow
@@ -320,12 +338,16 @@ footer, header, main
   padding: 5px
   margin: 0 25px 0 0
   color: $blue
+
   svg
     fill: $blue
+
   &:hover
     border-color: $yellow
+
     svg
       fill: $yellow
+
   span
     font-weight: bold
     text-transform: uppercase
@@ -347,19 +369,23 @@ footer, header, main
   max-width: 300px
   width: 100%
   position: relative
+
   label
     margin: 0
+
   input
     padding: 0 30px 0 15px
+
   button
     position: absolute
     right: 14px
     top: 50%
-    transform: translate(0,-50%)
+    transform: translate(0, -50%)
     width: 16px
     height: 16px
     background: transparent
     padding: 0
+
     svg
       fill: $blue
 
@@ -370,6 +396,7 @@ footer, header, main
 .navigation-main
   width: 100%
   @include display-between
+
   li
     a
       color: #fff
@@ -412,7 +439,7 @@ footer, header, main
     background: #5038ca
 
 .dropdown-menu
-  box-shadow: 0 5px 25px rgba($blue,.5)
+  box-shadow: 0 5px 25px rgba($blue, .5)
   opacity: 0
   visibility: hidden
   transition: .3s ease
@@ -424,11 +451,13 @@ footer, header, main
   box-sizing: border-box
   z-index: 5
   background: $blue
+
   li
 
     &:last-child
       a
         border: none
+
     a
       font-size: 14px
       text-align: left
@@ -442,6 +471,7 @@ footer, header, main
 
       &:hover
         background: #5038ca
+
     &:hover
       .dropdown-menu__level
         display: block
@@ -450,15 +480,17 @@ footer, header, main
   position: absolute
   top: 0
   left: 100%
-  box-shadow: 0 5px 25px rgba($blue,.5)
+  box-shadow: 0 5px 25px rgba($blue, .5)
   background: #5038ca
   min-width: 200px
   height: 100%
   display: none
+
   li
     &:last-child
       a
         border: none
+
     a
       padding: 15px
       border-bottom: 1px solid rgba(255, 255, 255, 0.2)
@@ -473,14 +505,16 @@ footer, header, main
 
   .slick-dots
     bottom: 20px
+
   .slick-next
     right: 20px
+
   .slick-prev
     left: 20px
 
 .main-slider__title
   font-weight: bold
-  text-shadow: 1px 1px 1px rgba(0,0,0,.1)
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, .1)
   width: 70%
   font-size: 50px
   margin: 0 0 30px
@@ -488,9 +522,11 @@ footer, header, main
 .main-slider-box
   padding: 100px 0
   position: relative
+
   .container
     flex-direction: column
     align-items: flex-start
+
   p
     margin: 0 0 80px
     width: 45%
@@ -509,20 +545,24 @@ footer, header, main
 
 .slick-dots
   width: 100%
+
   li
     width: 14px
     height: 14px
     border-radius: 50%
     background: #fff
     border: 2px solid $yellow
+
     button
       display: none
+
   .slick-active
     background: $yellow
 
 .slick-arrow
   z-index: 1
   opacity: 1
+
   &:before
     display: none
   width: 40px
@@ -535,19 +575,21 @@ footer, header, main
   background: $yellow url("../img/next.svg") no-repeat center
     size: 16px
   transition: .3s ease
+
   &:hover, &:focus
     background: $yellow url("../img/next.svg") no-repeat center
       size: 16px
-    box-shadow: 0 5px 15px rgba($yellow,.5)
+    box-shadow: 0 5px 15px rgba($yellow, .5)
 
 .slick-prev
   left: 0
   background: $yellow url("../img/back.svg") no-repeat center
     size: 16px
+
   &:hover, &:focus
     background: $yellow url("../img/back.svg") no-repeat center
       size: 16px
-    box-shadow: 0 5px 15px rgba($yellow,.5)
+    box-shadow: 0 5px 15px rgba($yellow, .5)
 
 .slick-dotted.slick-slider
   margin-bottom: 0
@@ -562,11 +604,13 @@ footer, header, main
   padding: 0 20px
   cursor: pointer
   @include display-center
+
   img
-    transition: .25s cubic-bezier(.25,.1,.25,1)
+    transition: .25s cubic-bezier(.25, .1, .25, 1)
+
   &:hover
     img
-      transform: translateX(15px) rotateY(-45deg) scale3d(1.4,1.2,1)
+      transform: translateX(15px) rotateY(-45deg) scale3d(1.4, 1.2, 1)
 
 //footer
 footer
@@ -574,15 +618,20 @@ footer
   padding: 20px 0
   color: #fff
   font-size: 14px
+
   .container
     justify-content: space-between
     align-items: flex-start
+
   .phone
     color: #fff
+
     svg
       fill: rgba(#fff, .5)
+
   .links-call
     font-size: 12px
+
   svg
     fill: rgba(#fff, .5)
 
@@ -598,27 +647,36 @@ footer
 
 .list-social
   @include display-start
+
   li
     margin: 0 15px 0 0
+
     &:last-child
       margin: 0
+
   a
     width: 24px
     height: 24px
     opacity: .6
+
     &:hover
       opacity: 1
+
     svg
       fill: #fff
 
 .footer-menu
   font-size: 13px
+
   li
     margin: 0 0 10px
+
     &:last-child
       margin: 0
+
     a
       color: rgba(#fff, .5)
+
       &:hover
         color: #fff
 
@@ -627,12 +685,16 @@ footer
 
 .list-payment
   @include display-start
+
   li
     margin: 0 10px 0 0
+
     &:last-child
       margin: 0
+
       a
         width: 25px
+
   a
     display: flex
     align-items: center
@@ -652,29 +714,36 @@ footer
   flex-direction: column
   align-items: flex-start
   margin: 0 60px 0 0
+
   &:last-child
     margin: 0
 
 .list-message
   margin: 0 0 20px
+
   li
     margin: 0 0 5px
+
     &:last-child
       margin: 0
+
     a
       @include display-start
       color: rgba(#fff, .5)
+
       svg
         width: 16px
         height: 12px
         margin-right: 5px
         fill: rgba(#fff, .5)
+
       &:hover
         color: #fff
 
 .address
   position: relative
   padding: 0 0 0 20px
+
   .svg-icon
     position: absolute
     left: 0
@@ -687,6 +756,7 @@ footer
 .products-section
   h2
     margin: 0 auto
+
   .container
     padding: 0 15px 30px
 
@@ -700,8 +770,9 @@ footer
   background: #fff
   transition: .3s ease
   overflow: hidden
+
   &:hover
-    box-shadow: 0 7px 15px rgba(59,55,43,.25)
+    box-shadow: 0 7px 15px rgba(59, 55, 43, .25)
 
 .btn-favorites
   position: absolute
@@ -710,23 +781,27 @@ footer
   width: 20px
   height: 20px
   fill: $yellow
+
   &:hover, &:focus
     fill: $accent
-
 
 
 .list-rating
   margin: 0 auto 10px
   @include display-center
   width: 100%
+
   li
     margin: 0 5px 0 0
+
     &:last-child
       margin: 0
+
     .svg-icon
       width: 15px
       height: 15px
       fill: #ccc
+
     .svg-icon1
       fill: $yellow
 
@@ -750,7 +825,7 @@ footer
 
 .price-wrapper
   @include display-center
-  
+
 .old-price
   color: #ccc
   text-decoration: line-through
@@ -759,6 +834,7 @@ footer
 .product-cart__image
   height: 224px
   @include display-center
+
   img
     max-height: 100%
 
@@ -767,7 +843,7 @@ footer
     max-width: 98%
     margin: 20px auto
 
-    
+
 .img-responsive
   margin: 0 auto 30px
 
@@ -780,6 +856,7 @@ footer
 .category-section
   .container
     padding: 30px 15px
+
   h3
     padding: 0 0 10px
     border-bottom: 1px solid $blue
@@ -796,17 +873,22 @@ footer
   width: 100%
   background: $blue
   color: #fff
+
   li
     border-bottom: 1px solid rgba(#fff, .5)
+
     &:last-child
       border: none
+
     &:hover
       .menu-category__dropdown
         display: block
+
     a
       color: #fff
       padding: 15px
-      >&:hover
+
+      > &:hover
         background: $yellow
 
 .menu-category__dropdown
@@ -821,11 +903,13 @@ footer
   background: #5038ca
   box-shadow: 0 0 5px rgba($blue, .3)
   display: none
+
   li
     a
       color: #fff
       font-size: 14px
       padding: 10px
+
       &:hover
         background: $blue
         text-indent: 5px
@@ -846,6 +930,7 @@ footer
   display: flex
   align-items: center
   justify-content: space-between
+
   &:after
     content: ''
     display: inline-block
@@ -869,9 +954,11 @@ footer
   padding: 15px
   height: 130px
   background: #fff
+
   &__icon
     max-width: 75px
     margin: 0 auto 10px
+
   &:hover
     box-shadow: 0 0 15px rgba($blue, .3)
 
@@ -883,12 +970,14 @@ footer
   display: none
   width: 30px
   margin: 0 0 0 10px
+
   span
     display: block
     background: $blue
     margin: 0 0 4px
     width: 100%
     height: 2px
+
     &:last-child
       margin: 0
 
@@ -905,29 +994,39 @@ footer
   background: #fff
   overflow-x: auto
   z-index: 3
+
   .logo
     max-width: none
+
   .main-menu
     flex-direction: column
     align-items: center
     margin: 20px 0
+
     li
       width: 100%
+
       a
         font-size: 16px
         padding: 10px
         width: 100%
         color: #000
+
         &:hover
           color: #fff
+
   .list-social
     margin: 10px 0 0
+
     a svg
       fill: $blue
+
   .list-message
     margin: 20px 0 0
+
     li a
       color: $blue
+
       svg
         fill: $blue
 
@@ -937,6 +1036,7 @@ footer
   width: 20px
   height: 20px
   margin: 0 0 20px auto
+
   &:before, &:after
     content: ''
     position: absolute
@@ -945,8 +1045,10 @@ footer
     background: #000
     left: 10px
     top: 0
+
   &:before
     transform: rotate(45deg)
+
   &:after
     transform: rotate(135deg)
 
@@ -959,15 +1061,17 @@ footer
   margin: 0 auto
   max-width: 400px
   width: 100%
+
   .links
     font-size: 14px
+
   button
     height: 50px
     margin: 20px auto 0
+
   .wrapper
     font-size: 14px
     margin: 0 auto 20px
-
 
 
 .img-recaptcha
@@ -978,6 +1082,7 @@ footer
   display: block
   margin: 0 0 5px
   font-size: 14px
+
   sup
     color: $accent
 
@@ -988,8 +1093,10 @@ footer
   background: #fff
   box-shadow: 0 4px 0 0 rgba($blue, .75)
   margin: 0 0 30px
+
   &:last-child
     margin: 0
+
   h3
     text-align: center
     width: 100%
@@ -998,6 +1105,7 @@ footer
     margin: 0 auto 10px
     position: relative
     padding: 0 0 10px
+
     &:before
       content: ''
       position: absolute
@@ -1006,7 +1114,7 @@ footer
       background: $blue
       bottom: 0
       left: 50%
-      transform: translate(-50%,0)
+      transform: translate(-50%, 0)
 
 
 .delivery-box__top
@@ -1033,6 +1141,7 @@ footer
   .wrapper
     margin: 30px 0 0
     align-items: flex-start
+
   h3
     font-weight: 500
     margin: 0 0 10px
@@ -1041,6 +1150,7 @@ footer
 .company-contacts
   .address
     margin: 20px 0
+
     .svg-icon
       fill: $blue
 
@@ -1049,6 +1159,7 @@ footer
   color: #000
   font-weight: 500
   margin: 20px 0 0
+
   .svg-icon
     fill: $blue
     width: 12px
@@ -1057,6 +1168,7 @@ footer
 
 .schedule
   @include display-start
+
   .svg-icon
     fill: $blue
     width: 12px
@@ -1067,6 +1179,7 @@ footer
   height: 300px
   max-width: 650px
   width: 100%
+
   iframe
     width: 100%
     height: 100%
@@ -1075,17 +1188,20 @@ footer
 .sidebar
   max-width: 300px
   width: 100%
+
   h3
     font-weight: 500
     margin: 0 0 10px
     text-transform: uppercase
     padding: 0 0 10px
     border-bottom: 1px solid #3c2a98
+
   .btn-close
     display: none
 
 .sidebar-box
   margin: 0 0 30px
+
   &:last-child
     margin: 0
 
@@ -1100,14 +1216,18 @@ footer
 .form-callback
   margin: 0 auto
   width: 100%
+
   button
     max-width: none
+
   label
     position: relative
+
   .input-icon
     position: absolute
     top: 10px
     left: 10px
+
   input
     padding: 0 10px 0 40px
 
@@ -1116,6 +1236,7 @@ footer
   width: 100%
   font-size: 14px
   border: 1px solid #d4d4d4
+
   li
     a
       color: #000
@@ -1123,12 +1244,14 @@ footer
 .menu-catalog__item
   position: relative
   border-top: 1px solid #d4d4d4
+
   &:first-child
     border: none
 
 .menu-catalog__item.active
   .menu-catalog__links
     background: rgba($blue, .4)
+
   .btn-dropdown
     &:before
       content: '-'
@@ -1146,10 +1269,11 @@ footer
   width: 33px
   height: 33px
   cursor: pointer
+
   &:before
     content: '+'
     position: absolute
-    transform: translate(-50%,-50%)
+    transform: translate(-50%, -50%)
     left: 50%
     top: 50%
     transition: .3s ease
@@ -1159,14 +1283,17 @@ footer
   width: 100%
   display: none
   background: rgba($blue, .2)
+
   li
     a
       padding: 5px 20px
       font-size: 12px
+
       &:before
         content: '-'
         display: inline-block
         margin: 0 5px 0 0
+
       &:hover
         color: $blue
 
@@ -1177,12 +1304,16 @@ footer
 .catalog-content
   width: calc(100% - 300px)
   padding: 0 0 0 30px
+
   .box-text
     margin: 0 0 20px
+
     ul
       margin: 0 0 10px
+
     &:last-child
       margin: 0
+
     h4
       font-weight: 500
       margin: 0 0 5px
@@ -1191,9 +1322,11 @@ footer
   width: 100%
   margin: 0 0 20px
   @include display-start
+
   .box-text
     width: calc(100% - 150px)
     padding: 0 0 0 20px
+
   h3
     font-weight: 600
     margin: 0 0 10px
@@ -1211,6 +1344,7 @@ footer
 
 .sorting-box
   @include display-start
+
   p
     font-size: 12px
     margin: 0 10px 0 0
@@ -1225,7 +1359,7 @@ select
   position: absolute
   right: 10px
   top: 45%
-  transform: translate(0,-50%)
+  transform: translate(0, -50%)
   width: 12px
   height: 12px
   fill: $blue
@@ -1240,13 +1374,16 @@ select
 
 .tab-header
   @include display-start
+
   li
     width: 30px
     height: 30px
     cursor: pointer
     margin: 0 10px 0 0
+
     &:last-child
       margin: 0
+
     .svg-icon
       fill: $blue
 
@@ -1266,6 +1403,7 @@ select
   font-size: 14px
   font-weight: 600
   @include display-between
+
   &:after
     content: '+'
     display: inline-block
@@ -1279,10 +1417,13 @@ select
   width: 100%
   margin: 20px auto
   @include display-center
+
   li
     margin: 0 10px 0 0
+
     &:last-child
       margin: 0
+
     a
       width: 30px
       height: 30px
@@ -1292,11 +1433,14 @@ select
       text-align: center
       color: #000
       font-weight: 500
+
       &:hover
         background: $yellow
+
     .active
       background: $yellow
       color: #000
+
     .svg-icon
       fill: $blue
       max-width: 16px
@@ -1304,6 +1448,7 @@ select
 .recommended-section
   .container
     padding: 20px 15px 40px
+
   h2
     margin: 0 auto
 
@@ -1313,6 +1458,7 @@ select
   padding: 8px 20px
   border: 1px solid #d4d4d4
   display: none
+
   .svg-icon
     width: 20px
     height: 20px
@@ -1330,8 +1476,10 @@ select
       padding: 10px 20px
       color: #000
       font-weight: 600
+
       &:hover
         color: $blue
+
     .active
       color: $blue
       background: #fff
@@ -1370,6 +1518,7 @@ select
   width: 20px
   height: 20px
   cursor: pointer
+
   &:before, &:after
     content: ''
     position: absolute
@@ -1378,8 +1527,10 @@ select
     background: $blue
     left: 10px
     top: 0
+
   &:before
     transform: rotate(45deg)
+
   &:after
     transform: rotate(135deg)
 
@@ -1399,7 +1550,7 @@ select
   background-color: #000
   opacity: 0.8
   -moz-opacity: 0.8
-  filter: alpha(opacity = 80)
+  filter: alpha(opacity=80)
   width: 100%
   height: 100%
   top: 0
@@ -1418,6 +1569,7 @@ select
   position: relative
   justify-content: space-between
   font-weight: 500
+
   &:after
     content: '+'
     display: inline-block
@@ -1433,6 +1585,7 @@ select
   border: 1px solid #d4d4d4
   font-size: 14px
   @include display-stretch
+
   &:last-child
     margin: 0
 
@@ -1448,9 +1601,12 @@ select
   //width: calc(100% - 150px)
   //padding: 0 0 0 20px
   @include display-start-start
+
   p
     font-weight: 500
     margin: 0 0 5px
+
+
 
 .orders-box__title
   font-weight: 600
@@ -1488,20 +1644,25 @@ select
 .product-info
   width: calc(100% - 500px)
   padding: 0 0 0 20px
+
   .list-rating
     width: auto
     margin: 0
+
   .price-wrapper
     font-size: 20px
     font-weight: 600
     margin: 0
+
   .new-price
     font-size: 22px
+
   .wrapper
     margin: 0 0 20px
 
 .amount
   @include display-center
+
   span
     @include display-center
     width: 40px
@@ -1510,6 +1671,7 @@ select
     color: #fff
     cursor: pointer
     font-size: 20px
+
   input
     max-width: 100px
     width: 100%
@@ -1525,11 +1687,14 @@ select
 .list-characteristics
   color: #444
   font-size: 14px
+
   li
     margin: 0 0 10px
     @include display-start
+
     &:last-child
       margin: 0
+
     span
       font-weight: 500
       display: inline-block
@@ -1561,6 +1726,7 @@ select
   @include display-start
   width: 100%
   margin: 0 0 20px
+
   .list-rating
     margin: 0 0 0 30px
     width: auto
@@ -1584,7 +1750,7 @@ select
   min-width: 20px
   margin: 0 10px 0 0
   fill: $blue
-  
+
 .reviews-box-questions
   width: 100%
   margin: 0 0 20px
@@ -1595,11 +1761,14 @@ select
 .reviews-box-questions__item
   margin: 0 0 20px
   width: 100%
+
   &:last-child
     margin: 0
+
   h4
     font-weight: 500
     margin: 0 0 5px
+
   .box-text
     font-style: italic
 
@@ -1629,6 +1798,7 @@ select
   font-size: 14px
   font-weight: 500
   margin: 0
+
   .label
     color: #93949c
     display: inline-block
@@ -1639,6 +1809,7 @@ select
 .radio-inp:checked
   ~ .label
     color: $blue
+
   ~ .radio-icon
     .svg-icon
       fill: $blue
@@ -1651,13 +1822,16 @@ select
   display: flex
   align-items: center
   justify-content: center
+
   .svg-icon
     fill: #93949c
 
 .list-radio
   @include display-start-start
+
   li
     margin: 0 20px 0 0
+
     &:last-child
       margin: 0
 
@@ -1667,17 +1841,22 @@ select
   padding: 10px 0
   border-bottom: 1px solid #d4d4d4
   font-weight: 500
+
   &:last-child
     border: none
+
   .label-select
     width: 100%
     margin: 10px 0 0
+
   select
     width: 100%
+
   h3
     margin: 0 0 10px
     width: 100%
     font-weight: 600
+
   label
     width: 100%
 
@@ -1686,22 +1865,115 @@ select
 
 .list-estimate
   @include display-start
+
   li
     width: 30px
     height: 30px
     transition: .3s ease
     margin: 0 10px 0 0
     cursor: pointer
+
     .svg-icon
       fill: #ccc
+
     &:last-child
       margin: 0
+
     &:hover
       .svg-icon
         fill: $yellow
+
   .selected
     .svg-icon
       fill: $yellow
+
+//.basket
+.stage-basket
+  margin: 0 0 30px
+  background: #ffff
+  padding: 15px
+  .btn-group
+    justify-content: flex-end
+    .btn
+      margin: 20px 20px 0 0
+      height: 50px
+      max-width: 220px
+      font-size: 14px
+      &:last-child
+        margin-right: 0
+  select
+    width: 100%
+  .input-title
+    font-weight: 600
+    margin: 0 0 5px
+  label
+    margin: 0
+
+.stage-basket-line
+  width: 100%
+  font-weight: bold
+  margin: 0 0 20px
+  font-size: 18px
+
+.orders-box-basket
+  position: relative
+  .orders-box__body
+    width: calc(100% - 150px)
+    padding: 0 0 0 20px
+  .orders-box__body-box-info
+    width: 40%
+  .amount
+    input
+      width: 60px
+      border:
+        top: 1px solid #d4d4d4
+        bottom: 1px solid #d4d4d4
+
+
+.btn-delete
+  width: 20px
+  height: 20px
+  top: 10px
+  right: 10px
+  position: absolute
+  cursor: pointer
+  &:before, &:after
+    content: ''
+    position: absolute
+    width: 2px
+    height: 100%
+    background: $accent
+    left: 10px
+    top: 0
+    border-radius: 2px
+  &:before
+    transform: rotate(45deg)
+
+  &:after
+    transform: rotate(135deg)
+
+.total-basket
+  margin: 20px 0 0
+  li
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    justify-content: flex-end
+    margin: 0 0 10px
+    &:last-child
+      margin: 0
+  span
+    font-weight: 600
+    margin: 0 0 0 10px
+
+.stage-basket__delivery-item
+  width: 32%
+  margin: 0 0 15px
+
+.form-basket
+  button
+    margin: 20px auto 0
+    font-size: 16px
 
 
 @import "media"

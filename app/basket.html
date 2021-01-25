@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Технолидер - магазин сельхоззапчастей</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<div class="mobile-menu">
+  <div class="btn-close"></div>
+  <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+
+  <ul class="main-menu">
+    <li class="main-menu__item">
+      <a href="index.html" class="main-menu__links">Главная</a>
+    </li>
+    <li class="main-menu__item">
+      <a href="catalog.html" class="main-menu__links links-drop">Каталог</a>
+    </li>
+    <li class="main-menu__item"><a href="delivery.html" class="main-menu__links">Доставка</a></li>
+    <li class="main-menu__item"><a href="about.html" class="main-menu__links">O компании</a></li>
+    <li class="main-menu__item"><a href="reviews.html" class="main-menu__links">Отзывы</a></li>
+  </ul>
+
+  <div class="box-contacts">
+    <a href="tel:+79104430909" class="phone">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#icon-phone"></use>
+      </svg>
+      +7 (910) 443-09-09</a>
+    <a href="#callback__modal" class="open_modal color-grey text-decoration">Перезвонить вам?</a>
+  </div>
+
+  <div class="box-social">
+    <h3>Мы в соцсетях:</h3>
+
+    <ul class="list-social">
+      <li><a href="#">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#icon-vk"></use>
+        </svg>
+      </a></li>
+      <li><a href="#">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#icon-fb"></use>
+        </svg>
+      </a></li>
+      <li><a href="#">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#icon-tw"></use>
+        </svg>
+      </a></li>
+      <li><a href="#">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#icon-ig"></use>
+        </svg>
+      </a></li>
+    </ul>
+  </div>
+
+  <ul class="list-message">
+    <li><a href="#">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#icon-whatsapp"></use>
+      </svg>
+      <span>whats-app</span>
+    </a></li>
+    <li><a href="#">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#icon-telegram"></use>
+      </svg>
+      <span>telegram</span>
+    </a></li>
+    <li><a href="#">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#icon-skype"></use>
+      </svg>
+      <span>skype</span>
+    </a></li>
+    <li><a href="mailto:mail@mail.com">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#icon-email"></use>
+      </svg>
+      <span>mail@mail.com</span>
+    </a></li>
+  </ul>
+</div>
+
+<header>
+  <div class="header-top">
+    <div class="container">
+      <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+
+      <form method="post" class="form-search">
+        <label><input type="text" placeholder="Найти" required></label>
+        <button type="submit">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#icon-search"></use>
+          </svg>
+        </button>
+      </form>
+
+      <div class="box-contacts">
+        <a href="tel:+79104430909" class="phone">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#icon-phone"></use>
+          </svg>
+          +7 (910) 443-09-09</a>
+        <a href="#callback__modal" class="open_modal color-grey text-decoration">Перезвонить вам?</a>
+      </div>
+
+      <div class="links-group">
+        <a href="registration.html" class="links-cabinet">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#user-icon"></use>
+          </svg>
+        </a>
+
+        <a href="#" class="box-basket">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#icon-basket"></use>
+          </svg>
+          <span class="total-orders-basket">1</span>
+        </a>
+
+        <div class="btn-burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-bottom">
+    <div class="container">
+      <nav class="navigation-main">
+        <ul class="main-menu">
+          <li class="main-menu__item">
+            <a href="index.html" class="main-menu__links">Главная</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="catalog.html" class="main-menu__links links-drop">Каталог</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Подкатегория 1</a>
+                <ul class="dropdown-menu__level">
+                  <li><a href="#">Подкатегория 1-1</a></li>
+                  <li><a href="#">Подкатегория 1-1</a></li>
+                  <li><a href="#">Подкатегория 1-1</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Подкатегория 2</a></li>
+              <li><a href="#">Подкатегория 3</a></li>
+              <li><a href="#">Подкатегория 4</a></li>
+              <li><a href="#">Подкатегория 5</a></li>
+            </ul>
+          </li>
+          <li class="main-menu__item"><a href="delivery.html" class="main-menu__links">Доставка</a></li>
+          <li class="main-menu__item"><a href="about.html" class="main-menu__links">O компании</a></li>
+          <li class="main-menu__item"><a href="reviews.html" class="main-menu__links">Отзывы</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<section class="content-page page-basket">
+  <div class="container">
+    <ul class="breadcrumb">
+      <li><a href="index.html">Главная</a></li>
+      <li><span>Корзина</span></li>
+    </ul>
+
+    <h1>Корзина</h1>
+
+    <form method="post" class="form-basket w-100">
+      <div class="stage-basket w-100">
+        <div class="stage-basket-line">
+          1. Оформление заказа
+        </div>
+
+        <div class="stage-basket-body">
+          <div class="orders-box orders-box-basket">
+            <a href="product.html" class="orders-box__img"><img src="img/category1.jpg" alt=""></a>
+            <div class="orders-box__body">
+              <div class="orders-box__body-box-info">
+                <a href="product.html" class="orders-box__title">AH140497 Шкив John Deere (COMBINE)</a>
+                <div class="article">Арт.: 021428</div>
+              </div>
+              <div class="orders-box__body-box">
+                <p>Цена</p>
+                <span>1090 грн</span>
+              </div>
+              <div class="orders-box__body-box">
+                <p>Количество</p>
+                <div class="amount">
+                  <span class="down">-</span>
+                  <input type="text" value="1"/>
+                  <span class="up">+</span>
+                </div>
+              </div>
+              <div class="orders-box__body-box">
+                <p>Сумма</p>
+                <span>1090 грн</span>
+              </div>
+
+              <a href="#" class="btn-delete"></a>
+            </div>
+          </div>
+          <div class="orders-box orders-box-basket">
+            <a href="product.html" class="orders-box__img"><img src="img/category1.jpg" alt=""></a>
+            <div class="orders-box__body">
+              <div class="orders-box__body-box-info">
+                <a href="product.html" class="orders-box__title">AH140497 Шкив John Deere (COMBINE)</a>
+                <div class="article">Арт.: 021428</div>
+              </div>
+              <div class="orders-box__body-box">
+                <p>Цена</p>
+                <span>1090 грн</span>
+              </div>
+              <div class="orders-box__body-box">
+                <p>Количество</p>
+                <div class="amount">
+                  <span class="down">-</span>
+                  <input type="text" value="1"/>
+                  <span class="up">+</span>
+                </div>
+              </div>
+              <div class="orders-box__body-box">
+                <p>Сумма</p>
+                <span>1090 грн</span>
+              </div>
+
+              <a href="#" class="btn-delete"></a>
+            </div>
+          </div>
+
+          <ul class="total-basket">
+            <li>
+              <p>Запасных частей:</p><span>2 шт.</span>
+            </li>
+            <li>
+              <p>Итого:</p><span>2 180 грн</span>
+            </li>
+          </ul>
+
+          <div class="btn-group">
+            <a href="#" class="btn btn-red">Продолжить покупки</a>
+            <a href="#" class="btn btn-accent">Очистить корзину</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="stage-basket w-100">
+        <div class="stage-basket-line">
+          2. Доставка
+        </div>
+
+        <div class="stage-basket-body">
+          <div class="wrapper">
+            <div class="stage-basket__delivery-item">
+              <span class="input-title">Способ доставки <sup>*</sup></span>
+              <label class="label-select">
+                <select name="sorting_select">
+                  <option value="Самовывоз">Самовывоз</option>
+                  <option value="Новая почта">Новая почта</option>
+                  <option value="Gunsel">Gunsel</option>
+                  <option value="DHL">DHL</option>
+                  <option value="Meest Express">Meest Express</option>
+                </select>
+                <span class="icon-select"><svg class="svg-icon"><use
+                    xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span>
+              </label>
+            </div>
+            <div class="stage-basket__delivery-item">
+              <span class="input-title">Город <sup>*</sup></span>
+              <label>
+                <input type="text" name="city" placeholder="Херсон" required>
+              </label>
+            </div>
+
+            <div class="stage-basket__delivery-item">
+                <span class="input-title">Адрес <sup>*</sup></span>
+              <label>
+                <input type="text" name="address" placeholder="Херсон" required>
+              </label>
+            </div>
+
+            <div class="stage-basket__delivery-item">
+              <span class="input-title">Ваше имя и фамилия <sup>*</sup></span>
+              <label>
+                <input type="text" placeholder="Иван Степнов" name="name" required>
+              </label>
+            </div>
+
+            <div class="stage-basket__delivery-item">
+              <span class="input-title">Ваш телефон <sup>*</sup></span>
+              <label>
+                <input type="text" placeholder="+38" name="phone" required>
+              </label>
+            </div>
+
+            <div class="stage-basket__delivery-item">
+              <span class="input-title">Комментарий</span>
+              <label>
+                <input type="text" name="comment" placeholder="">
+              </label>
+            </div>
+
+            <div class="necessarily">
+              <sup class="color-accent">*</sup> - обязательные поля
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-accent">Оформить заказ</button>
+        </div>
+
+      </div>
+    </form>
+
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-box footer-box-first">
+      <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+
+      <div class="copyright">© 2021 Все права защищены</div>
+
+      <div class="box-payment">
+        <p>Принимаем к оплате</p>
+        <ul class="list-payment">
+          <li><a href="#"><img src="img/visa.svg" alt=""></a></li>
+          <li><a href="#"><img src="img/mastercard.svg" alt=""></a></li>
+          <li><a href="#"><img src="img/privat.png" alt=""></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-box">
+      <h3>Каталог</h3>
+      <ul class="footer-menu">
+        <li><a href="#">Подкатегория</a></li>
+        <li><a href="#">Подкатегория</a></li>
+        <li><a href="#">Подкатегория</a></li>
+        <li><a href="#">Подкатегория</a></li>
+        <li><a href="#">Подкатегория</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-box">
+      <h3>Клиентам</h3>
+      <ul class="footer-menu">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">О компании</a></li>
+        <li><a href="#">Отзывы</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-box footer-box-contacts">
+      <h3>Контактная информация</h3>
+
+      <div class="row-wrapper">
+        <div class="col-wrapper">
+          <div class="box-contacts">
+            <a href="tel:+79104430909" class="phone">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#icon-phone"></use>
+              </svg>
+              +7 (910) 443-09-09</a>
+
+            <a href="tel:+79104430909" class="phone">
+              +7 (910) 443-09-09</a>
+            <a href="#callback__modal" class="open_modal links-call color-white text-decoration">Перезвонить вам?</a>
+          </div>
+
+          <div class="box-social">
+            <h3>Мы в соцсетях:</h3>
+
+            <ul class="list-social">
+              <li><a href="#">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#icon-vk"></use>
+                </svg>
+              </a></li>
+              <li><a href="#">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#icon-fb"></use>
+                </svg>
+              </a></li>
+              <li><a href="#">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#icon-tw"></use>
+                </svg>
+              </a></li>
+              <li><a href="#">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#icon-ig"></use>
+                </svg>
+              </a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-wrapper">
+          <ul class="list-message">
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#icon-whatsapp"></use>
+              </svg>
+              <span>whats-app</span>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#icon-telegram"></use>
+              </svg>
+              <span>telegram</span>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#icon-skype"></use>
+              </svg>
+              <span>skype</span>
+            </a></li>
+            <li><a href="mailto:mail@mail.com">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#icon-email"></use>
+              </svg>
+              <span>mail@mail.com</span>
+            </a></li>
+          </ul>
+
+          <div class="address">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#icon-location"></use>
+            </svg>
+            <p>Киев, ул. Крещатик</p>
+
+            <a href="#" class="color-white links-call text-decoration">Карта проезда</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</footer>
+
+<!--modal-->
+<div class="modal__div" id="callback__modal">
+  <div class="modal__wrapper">
+    <div class="modal__close"></div>
+    <h2>Заказать звонок</h2>
+
+    <form method="post" class="form form-callback">
+      <label>
+              <span class="input-icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#user-icon"></use></svg></span>
+        <input type="text" placeholder="Имя" name="name">
+      </label>
+      <label>
+              <span class="input-icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#icon-phone"></use></svg></span>
+        <input type="text" placeholder="Телефон" name="phone" required>
+      </label>
+      <label>
+              <span class="input-icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#icon-email"></use></svg></span>
+        <input type="text" placeholder="Email" name="mail" required>
+      </label>
+      <button type="submit" class="btn btn-accent">Отправить</button>
+    </form>
+  </div>
+</div>
+<!-- Пoдлoжкa -->
+<div class="overlay"></div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>
