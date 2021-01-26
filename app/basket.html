@@ -322,10 +322,59 @@
             </div>
 
             <div class="stage-basket__delivery-item">
+              <span class="input-title">Спосок оплаты:</span>
+              <label class="label-select">
+                <select name="sorting_select">
+                  <option value="Банковская карта Приват 24">Банковская карта Приват 24</option>
+                  <option value="По факту получения">По факту получения</option>
+                </select>
+                <span class="icon-select"><svg class="svg-icon"><use
+                    xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span>
+              </label>
+            </div>
+
+            <div class="stage-basket__delivery-item">
               <span class="input-title">Комментарий</span>
               <label>
                 <input type="text" name="comment" placeholder="">
               </label>
+            </div>
+
+            <div class="panel_heading w-100">
+              <div class="block_title">
+                <h3>Изменить Отправителя/Получателя</h3>
+                <span class="block_title-icon"><svg class="svg-icon"><use
+                    xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span>
+              </div>
+              <div class="block_hover">
+                <div class="wrapper">
+                  <div class="stage-basket__delivery-item">
+                    <span class="input-title">Отправитель:</span>
+                    <label class="label-select">
+                      <select name="sorting_select">
+                        <option value="По умолчанию">По умолчанию</option>
+                      </select>
+                      <span class="icon-select"><svg class="svg-icon"><use
+                          xlink:href="img/sprite.svg#arrow-bottom"></use></svg></span>
+                    </label>
+                  </div>
+
+                  <div class="stage-basket__delivery-item">
+                    <span class="input-title">Получатель <sup>*</sup></span>
+                    <label>
+                      <input type="text" placeholder="" name="name" required disabled>
+                    </label>
+                  </div>
+
+                  <div class="stage-basket__delivery-item">
+                    <span class="input-title">Телефон получателя<sup>*</sup></span>
+                    <label>
+                      <input type="text" placeholder="+38" name="phone" required disabled>
+                    </label>
+                  </div>
+                </div>
+
+              </div>
             </div>
 
             <div class="necessarily">
